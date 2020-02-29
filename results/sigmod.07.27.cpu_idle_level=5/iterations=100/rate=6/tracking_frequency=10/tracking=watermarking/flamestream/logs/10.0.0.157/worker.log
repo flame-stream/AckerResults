@@ -1,0 +1,374 @@
+20:25:43,731 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+20:25:43,731 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+20:25:43,731 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [jar:file:/root/flamestream/lib/flamestream-runtime-1.0-SNAPSHOT.jar!/logback.xml]
+20:25:43,732 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs multiple times on the classpath.
+20:25:43,732 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/root/flamestream/lib/flamestream-runtime-1.0-SNAPSHOT.jar!/logback.xml]
+20:25:43,732 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/root/flamestream/flamestream-runtime-1.0-SNAPSHOT.jar!/logback.xml]
+20:25:43,755 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@51efea79 - URL [jar:file:/root/flamestream/lib/flamestream-runtime-1.0-SNAPSHOT.jar!/logback.xml] is not of type file
+20:25:43,827 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+20:25:43,827 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+20:25:43,843 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+20:25:43,859 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+20:25:43,945 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+20:25:43,950 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [FILE]
+20:25:43,976 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1345636186 - No compression will be used
+20:25:43,977 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1345636186 - Will use the pattern /tmp/application_%d{yyyy-MM-dd}.%i.log for the active file
+20:25:43,979 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@396a51ab - The date pattern is 'yyyy-MM-dd' from file name pattern '/tmp/application_%d{yyyy-MM-dd}.%i.log'.
+20:25:43,979 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@396a51ab - Roll-over at midnight.
+20:25:43,983 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@396a51ab - Setting initial period to Sat Jul 27 20:24:29 UTC 2019
+20:25:43,983 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@396a51ab - SizeAndTimeBasedFNATP is deprecated. Use SizeAndTimeBasedRollingPolicy instead
+20:25:43,983 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@396a51ab - For more information see http://logback.qos.ch/manual/appenders.html#SizeAndTimeBasedRollingPolicy
+20:25:43,992 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+20:25:43,994 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - Active log file name: /tmp/application.log
+20:25:43,994 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - File property is set to [/tmp/application.log]
+20:25:43,996 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to INFO
+20:25:43,997 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+20:25:43,998 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [FILE] to Logger[ROOT]
+20:25:43,998 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+20:25:43,998 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@51081592 - Registering current configuration as safe fallback point
+
+20:25:44.003 [main] INFO  c.s.f.r.WorkerApplication  - Starting worker with workerConfig 'WorkerConfig{id='10.0.0.157', localAddress=10.0.0.157:5412, zkString='10.0.0.71:12181', snapshotPath='/root/flamestream/data', guarantees=AT_MOST_ONCE, maxElementsInGraph=100, millisBetweenCommits=5000000, defaultMinimalTime=0, barrierDisabled=true, acking=DISABLED}'
+20:25:44.898 [worker-akka.actor.default-dispatcher-3] INFO  a.e.s.Slf4jLogger  - Slf4jLogger started
+20:25:45.169 [worker-akka.actor.default-dispatcher-3] INFO  a.r.a.a.ArteryAeronUdpTransport(akka://worker) akka.remote.artery.aeron.ArteryAeronUdpTransport(akka://worker) - Started embedded media driver in directory [/dev/shm/aeron-10.0.0.157]
+2019-07-27T20:25:45.226+0000: 1.803: [Full GC (Metadata GC Threshold) 2019-07-27T20:25:45.226+0000: 1.803: [Tenured: 0K->15077K(1024000K), 0.0353088 secs] 188608K->15077K(1484800K), [Metaspace: 20672K->20672K(1067008K)], 0.0353789 secs] [Times: user=0.03 sys=0.01, real=0.04 secs] 
+20:25:45.458 [worker-akka.actor.default-dispatcher-3] INFO  a.r.a.a.ArteryAeronUdpTransport(akka://worker) akka.remote.artery.aeron.ArteryAeronUdpTransport(akka://worker) - Remoting started with transport [Artery aeron-udp]; listening on address [akka://worker@10.0.0.157:5412] with UID [-2770378040248563107]
+20:25:45.804 [worker-akka.actor.default-dispatcher-6] INFO  a.a.RepointableActorRef akka://worker/user/watcher - Starting...
+20:25:45.874 [worker-akka.actor.default-dispatcher-4] INFO  o.a.c.u.Compatibility  - Running in ZooKeeper 3.4.x compatibility mode
+20:25:45.900 [worker-akka.actor.default-dispatcher-4] INFO  o.a.c.f.i.CuratorFrameworkImpl  - Starting
+20:25:45.910 [worker-akka.actor.default-dispatcher-4] INFO  o.a.z.ZooKeeper  - Client environment:zookeeper.version=3.4.14-4c25d480e66aadd371de8bd2fd8da255ac140bcf, built on 03/06/2019 16:18 GMT
+20:25:45.911 [worker-akka.actor.default-dispatcher-4] INFO  o.a.z.ZooKeeper  - Client environment:host.name=<NA>
+20:25:45.911 [worker-akka.actor.default-dispatcher-4] INFO  o.a.z.ZooKeeper  - Client environment:java.version=1.8.0_212
+20:25:45.912 [worker-akka.actor.default-dispatcher-4] INFO  o.a.z.ZooKeeper  - Client environment:java.vendor=Oracle Corporation
+20:25:45.913 [worker-akka.actor.default-dispatcher-4] INFO  o.a.z.ZooKeeper  - Client environment:java.home=/usr/lib/jvm/java-8-openjdk-amd64/jre
+20:25:45.913 [worker-akka.actor.default-dispatcher-4] INFO  o.a.z.ZooKeeper  - Client environment:java.class.path=lib/commons-cli-1.4.jar:lib/minlog-1.3.0.jar:lib/asm-5.0.4.jar:lib/zookeeper-3.4.14.jar:lib/jackson-annotations-2.9.0.jar:lib/commons-csv-1.4.jar:lib/annotations-13.0.jar:lib/akka-stream_2.11-2.5.16.jar:lib/lz4-1.3.0.jar:lib/scala-java8-compat_2.11-0.7.0.jar:lib/jblas-1.2.4.jar:lib/objenesis-2.1.jar:lib/curator-client-4.0.1.jar:lib/jsr305-3.0.2.jar:lib/aeron-client-1.9.3.jar:lib/leveldb-0.7.jar:lib/audience-annotations-0.5.0.jar:lib/flamestream-core-1.0-SNAPSHOT.jar:lib/reflectasm-1.07-shaded.jar:lib/commons-lang-2.6.jar:lib/akka-testkit_2.11-2.5.16.jar:lib/curator-recipes-4.0.1.jar:lib/logback-classic-1.2.3.jar:lib/jool-0.9.12.jar:lib/kryo-4.0.0.jar:lib/ssl-config-core_2.11-0.2.4.jar:lib/jackson-annotations-2.9.6.jar:lib/leveldbjni-all-1.8.jar:lib/jackson-databind-2.9.9.jar:lib/netty-3.10.6.Final.jar:lib/trove4j-3.0.3.jar:lib/logback-core-1.2.3.jar:lib/flamestream-examples-1.0-SNAPSHOT.jar:lib/akka-slf4j_2.11-2.5.16.jar:lib/akka-actor_2.11-2.5.16.jar:lib/slf4j-simple-2.0.0-alpha0.jar:lib/flamestream-runtime-1.0-SNAPSHOT.jar:lib/slf4j-api-1.7.24.jar:lib/jline-0.9.94.jar:lib/jedis-2.9.0.jar:lib/spotbugs-annotations-3.1.9.jar:lib/kryonet-2.21.jar:lib/akka-kryo-serialization_2.11-0.5.0.jar:lib/config-1.3.1.jar:lib/testng-6.10.jar:lib/agrona-0.9.18.jar:lib/leveldb-api-0.7.jar:lib/reactive-streams-1.0.2.jar:lib/reflectasm-1.11.3.jar:lib/jcommander-1.48.jar:lib/minlog-1.2.jar:lib/scala-parser-combinators_2.11-1.1.1.jar:lib/commons-1.4.9.jar:lib/commons-pool2-2.4.2.jar:lib/jackson-core-2.9.9.jar:lib/akka-remote_2.11-2.5.16.jar:lib/commons-io-2.4.jar:lib/rocksdbjni-5.5.1.jar:lib/guava-21.0.jar:lib/akka-protobuf_2.11-2.5.16.jar:lib/aeron-driver-1.9.3.jar:lib/flamestream-core-1.0-SNAPSHOT-tests.jar:lib/annotations-12.0.jar:lib/curator-framework-4.0.1.jar:lib/scala-library-2.11.12.jar:flamestream-runtime-1.0-SNAPSHOT.jar
+20:25:45.913 [worker-akka.actor.default-dispatcher-4] INFO  o.a.z.ZooKeeper  - Client environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+20:25:45.913 [worker-akka.actor.default-dispatcher-4] INFO  o.a.z.ZooKeeper  - Client environment:java.io.tmpdir=/tmp
+20:25:45.913 [worker-akka.actor.default-dispatcher-4] INFO  o.a.z.ZooKeeper  - Client environment:java.compiler=<NA>
+20:25:45.914 [worker-akka.actor.default-dispatcher-4] INFO  o.a.z.ZooKeeper  - Client environment:os.name=Linux
+20:25:45.914 [worker-akka.actor.default-dispatcher-4] INFO  o.a.z.ZooKeeper  - Client environment:os.arch=amd64
+20:25:45.914 [worker-akka.actor.default-dispatcher-4] INFO  o.a.z.ZooKeeper  - Client environment:os.version=4.4.0-1049-aws
+20:25:45.915 [worker-akka.actor.default-dispatcher-4] INFO  o.a.z.ZooKeeper  - Client environment:user.name=root
+20:25:45.915 [worker-akka.actor.default-dispatcher-4] INFO  o.a.z.ZooKeeper  - Client environment:user.home=/root
+20:25:45.915 [worker-akka.actor.default-dispatcher-4] INFO  o.a.z.ZooKeeper  - Client environment:user.dir=/root/flamestream
+20:25:45.916 [worker-akka.actor.default-dispatcher-4] INFO  o.a.z.ZooKeeper  - Initiating client connection, connectString=10.0.0.71:12181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@3ed825c0
+20:25:45.935 [worker-akka.actor.default-dispatcher-4-SendThread(10.0.0.71:12181)] INFO  o.a.z.ClientCnxn  - Opening socket connection to server 10.0.0.71/10.0.0.71:12181. Will not attempt to authenticate using SASL (unknown error)
+20:25:45.937 [worker-akka.actor.default-dispatcher-4] INFO  o.a.c.f.i.CuratorFrameworkImpl  - Default schema
+20:25:45.940 [worker-akka.actor.default-dispatcher-4-SendThread(10.0.0.71:12181)] INFO  o.a.z.ClientCnxn  - Socket connection established to 10.0.0.71/10.0.0.71:12181, initiating session
+20:25:45.951 [worker-akka.actor.default-dispatcher-4-SendThread(10.0.0.71:12181)] INFO  o.a.z.ClientCnxn  - Session establishment complete on server 10.0.0.71/10.0.0.71:12181, sessionid = 0x1007717bcea0003, negotiated timeout = 60000
+20:25:45.960 [worker-akka.actor.default-dispatcher-4-EventThread] INFO  o.a.c.f.s.ConnectionStateManager  - State change: CONNECTED
+20:25:45.963 [worker-akka.actor.default-dispatcher-6] INFO  a.a.RepointableActorRef akka://worker/user/watcher - Initializing rocksDB backend
+20:25:46.829 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher - Starting...
+20:25:58.035 [Curator-PathChildrenCache-1] WARN  o.a.c.u.ZKPaths  - The version of ZooKeeper being used doesn't support Container nodes. CreateMode.PERSISTENT will be used instead.
+20:25:58.153 [worker-akka.actor.default-dispatcher-4] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/$a - Starting...
+20:25:58.182 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/$a - Stopped
+20:25:59.388 [worker-akka.actor.default-dispatcher-6] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph - Starting...
+20:26:00.559 [worker-akka.actor.default-dispatcher-6] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph - Finishing constructor
+20:26:00.566 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/negotiator - Starting...
+20:26:00.568 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/edge - Starting...
+20:26:00.572 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph - Starting FlameNode with config 'ClusterConfig{paths={10.0.0.117=akka://worker@10.0.0.117:5412/user/watcher/processing-watcher/graph, 10.0.0.114=akka://worker@10.0.0.114:5412/user/watcher/processing-watcher/graph, 10.0.0.157=akka://worker@10.0.0.157:5412/user/watcher/processing-watcher/graph, 10.0.0.203=akka://worker@10.0.0.203:5412/user/watcher/processing-watcher/graph, 10.0.0.110=akka://worker@10.0.0.110:5412/user/watcher/processing-watcher/graph, 10.0.0.200=akka://worker@10.0.0.200:5412/user/watcher/processing-watcher/graph, 10.0.0.156=akka://worker@10.0.0.156:5412/user/watcher/processing-watcher/graph, 10.0.0.193=akka://worker@10.0.0.193:5412/user/watcher/processing-watcher/graph}, masterLocation='10.0.0.117', hashGroups={10.0.0.117=com.spbsu.flamestream.runtime.config.HashGroup@abd0db84, 10.0.0.114=com.spbsu.flamestream.runtime.config.HashGroup@ec806bc, 10.0.0.157=com.spbsu.flamestream.runtime.config.HashGroup@3a347097, 10.0.0.203=com.spbsu.flamestream.runtime.config.HashGroup@b742b82e, 10.0.0.110=com.spbsu.flamestream.runtime.config.HashGroup@2f33e44d, 10.0.0.200=com.spbsu.flamestream.runtime.config.HashGroup@bd6eb6c2, 10.0.0.156=com.spbsu.flamestream.runtime.config.HashGroup@ed8b2724, 10.0.0.193=com.spbsu.flamestream.runtime.config.HashGroup@c5711fed}}'
+20:26:00.590 [worker-akka.actor.default-dispatcher-10] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/negotiator - Requesting ticket for the frontClass FlameSocketGraphDeployerFront@10.0.0.157
+20:26:00.635 [worker-akka.actor.default-dispatcher-11] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph - Received last commit 'LastCommit{globalTime=(0000000, min@min)}'
+20:26:00.641 [worker-akka.actor.default-dispatcher-5] INFO  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@10.0.0.157: connecting to 10.0.0.71:5678
+20:26:00.670 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/edge/FlameSocketGraphDeployerFront - Starting...
+20:26:00.671 [worker-akka.actor.default-dispatcher-5] INFO  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@10.0.0.157: connected to 10.0.0.71:5678
+20:26:00.678 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/edge/FlameSocketGraphDeployerRear - Starting...
+20:26:00.679 [worker-akka.actor.default-dispatcher-5] INFO  c.s.f.r.e.s.SocketFront  - FlameSocketGraphDeployerFront@10.0.0.157: connecting to 10.0.0.71:4567
+20:26:00.679 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/negotiator - Ticket for the frontClass received: FrontTicket{allowedTimestamp=(0000000, FlameSocketGraphDeployerFront@10.0.0.157)}
+20:26:00.743 [Client] INFO  c.s.f.r.e.s.SocketFront  - FlameSocketGraphDeployerFront@10.0.0.157 has been disconnected from Connection 3
+20:26:00.904 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$a - Starting...
+20:26:00.907 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$b - Starting...
+20:26:00.907 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$c - Starting...
+20:26:00.909 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$d - Starting...
+20:26:00.910 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$e - Starting...
+20:26:00.912 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$f - Starting...
+20:26:00.913 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$g - Starting...
+20:26:00.914 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$h - Starting...
+20:26:00.916 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$i - Starting...
+20:26:00.917 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$j - Starting...
+20:26:00.918 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$k - Starting...
+20:26:00.920 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$l - Starting...
+20:26:00.921 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$m - Starting...
+20:26:00.923 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$n - Starting...
+20:26:00.923 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$o - Starting...
+20:26:00.926 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$p - Starting...
+20:26:00.928 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$q - Starting...
+20:26:00.929 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$r - Starting...
+20:26:00.931 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$s - Starting...
+20:26:00.932 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$t - Starting...
+20:26:00.933 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$u - Starting...
+20:26:00.935 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$v - Starting...
+20:26:00.936 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$w - Starting...
+20:26:00.938 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$x - Starting...
+20:26:00.939 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$y - Starting...
+20:26:00.942 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$z - Starting...
+20:26:00.943 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$A - Starting...
+20:26:00.945 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$B - Starting...
+20:26:00.946 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$C - Starting...
+20:26:00.948 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$D - Starting...
+20:26:00.949 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$E - Starting...
+20:26:00.949 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$F - Starting...
+20:26:00.951 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$G - Starting...
+20:26:00.952 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$H - Starting...
+20:26:00.953 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$I - Starting...
+20:26:00.954 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$J - Starting...
+20:26:00.956 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$K - Starting...
+20:26:00.957 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$L - Starting...
+20:26:00.958 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$M - Starting...
+20:26:00.960 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$N - Starting...
+20:26:00.961 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$O - Starting...
+20:26:00.962 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$P - Starting...
+20:26:00.964 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$Q - Starting...
+20:26:00.964 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$R - Starting...
+20:26:00.967 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$S - Starting...
+20:26:00.967 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$T - Starting...
+20:26:00.968 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$U - Starting...
+20:26:00.970 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$V - Starting...
+20:26:00.971 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$W - Starting...
+20:26:00.972 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$X - Starting...
+20:26:00.973 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$Y - Starting...
+20:26:00.975 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$Z - Starting...
+20:26:00.977 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$0 - Starting...
+20:26:00.978 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$1 - Starting...
+20:26:00.981 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$2 - Starting...
+20:26:00.982 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$3 - Starting...
+20:26:00.982 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$4 - Starting...
+20:26:00.983 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$5 - Starting...
+20:26:00.983 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$6 - Starting...
+20:26:00.983 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$7 - Starting...
+20:26:00.985 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$8 - Starting...
+20:26:00.987 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$9 - Starting...
+20:26:00.988 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$+ - Starting...
+20:26:00.990 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$~ - Starting...
+20:26:00.992 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$ab - Starting...
+20:26:00.993 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$bb - Starting...
+20:26:00.995 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$cb - Starting...
+20:26:00.995 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$db - Starting...
+20:26:00.997 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$eb - Starting...
+20:26:00.998 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$fb - Starting...
+20:26:00.999 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$gb - Starting...
+20:26:01.002 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$hb - Starting...
+20:26:01.003 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$ib - Starting...
+20:26:01.005 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$jb - Starting...
+20:26:01.008 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$kb - Starting...
+20:26:01.008 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$lb - Starting...
+20:26:01.009 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$mb - Starting...
+20:26:01.009 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$nb - Starting...
+20:26:01.009 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$ob - Starting...
+20:26:01.009 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$pb - Starting...
+20:26:01.010 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$qb - Starting...
+20:26:01.012 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$rb - Starting...
+20:26:01.014 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$sb - Starting...
+20:26:01.016 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$tb - Starting...
+20:26:01.018 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$ub - Starting...
+20:26:01.019 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$vb - Starting...
+20:26:01.021 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$wb - Starting...
+20:26:01.022 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$xb - Starting...
+20:26:01.022 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$yb - Starting...
+20:26:01.023 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$zb - Starting...
+20:26:01.024 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$Ab - Starting...
+20:26:01.026 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$Bb - Starting...
+20:26:01.027 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$Cb - Starting...
+20:26:01.035 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$Db - Starting...
+20:26:01.075 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$Db - Attached rear to graph (-9223372036854775808, min@min)
+20:26:01.076 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$Eb - Starting...
+20:26:01.077 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$Fb - Starting...
+20:26:01.078 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$Gb - Starting...
+20:26:01.079 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$Hb - Starting...
+20:26:01.079 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$Ib - Starting...
+20:26:01.080 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$Jb - Starting...
+20:26:01.081 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$Lb - Starting...
+20:26:01.083 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$Kb - Starting...
+20:26:01.083 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$Mb - Starting...
+20:26:01.084 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$Nb - Starting...
+2019-07-27T20:26:02.812+0000: 19.388: [Full GC (Metadata GC Threshold) 2019-07-27T20:26:02.812+0000: 19.388: [Tenured: 15077K->51769K(1024000K), 0.0670460 secs] 243103K->51769K(1484800K), [Metaspace: 34595K->34595K(1079296K)], 0.0671246 secs] [Times: user=0.06 sys=0.00, real=0.07 secs] 
+2019-07-27T20:26:12.486+0000: 29.063: [GC (Allocation Failure) 2019-07-27T20:26:12.486+0000: 29.063: [DefNew: 409600K->1095K(460800K), 0.0068645 secs] 461369K->52865K(1484800K), 0.0069241 secs] [Times: user=0.00 sys=0.01, real=0.01 secs] 
+2019-07-27T20:26:20.573+0000: 37.149: [GC (Allocation Failure) 2019-07-27T20:26:20.573+0000: 37.149: [DefNew: 410695K->1063K(460800K), 0.0035521 secs] 462465K->52832K(1484800K), 0.0036155 secs] [Times: user=0.01 sys=0.00, real=0.00 secs] 
+2019-07-27T20:26:30.390+0000: 46.966: [GC (Allocation Failure) 2019-07-27T20:26:30.390+0000: 46.966: [DefNew: 410663K->1063K(460800K), 0.0030560 secs] 462432K->52832K(1484800K), 0.0031278 secs] [Times: user=0.00 sys=0.00, real=0.01 secs] 
+2019-07-27T20:26:40.305+0000: 56.882: [GC (Allocation Failure) 2019-07-27T20:26:40.305+0000: 56.882: [DefNew: 410663K->1074K(460800K), 0.0030589 secs] 462432K->52844K(1484800K), 0.0031227 secs] [Times: user=0.00 sys=0.00, real=0.00 secs] 
+2019-07-27T20:26:51.251+0000: 67.828: [GC (Allocation Failure) 2019-07-27T20:26:51.251+0000: 67.828: [DefNew: 410674K->1445K(460800K), 0.0035130 secs] 462444K->53214K(1484800K), 0.0035773 secs] [Times: user=0.01 sys=0.00, real=0.00 secs] 
+2019-07-27T20:27:03.833+0000: 80.409: [GC (Allocation Failure) 2019-07-27T20:27:03.833+0000: 80.409: [DefNew: 411045K->1204K(460800K), 0.0032430 secs] 462814K->52973K(1484800K), 0.0033360 secs] [Times: user=0.01 sys=0.00, real=0.00 secs] 
+2019-07-27T20:27:16.535+0000: 93.111: [GC (Allocation Failure) 2019-07-27T20:27:16.535+0000: 93.111: [DefNew: 410804K->1195K(460800K), 0.0032979 secs] 462573K->52964K(1484800K), 0.0033588 secs] [Times: user=0.01 sys=0.00, real=0.00 secs] 
+2019-07-27T20:27:29.179+0000: 105.755: [GC (Allocation Failure) 2019-07-27T20:27:29.179+0000: 105.755: [DefNew: 410795K->1198K(460800K), 0.0031603 secs] 462564K->52967K(1484800K), 0.0032217 secs] [Times: user=0.00 sys=0.00, real=0.00 secs] 
+2019-07-27T20:27:41.847+0000: 118.424: [GC (Allocation Failure) 2019-07-27T20:27:41.848+0000: 118.424: [DefNew: 410798K->1193K(460800K), 0.0032684 secs] 462567K->52962K(1484800K), 0.0033313 secs] [Times: user=0.00 sys=0.00, real=0.01 secs] 
+2019-07-27T20:27:50.666+0000: 127.243: [GC (Allocation Failure) 2019-07-27T20:27:50.666+0000: 127.243: [DefNew: 410793K->1196K(460800K), 0.0033318 secs] 462562K->52965K(1484800K), 0.0033978 secs] [Times: user=0.00 sys=0.00, real=0.00 secs] 
+2019-07-27T20:27:58.444+0000: 135.021: [GC (Allocation Failure) 2019-07-27T20:27:58.444+0000: 135.021: [DefNew: 410796K->1208K(460800K), 0.0032634 secs] 462565K->52977K(1484800K), 0.0033235 secs] [Times: user=0.00 sys=0.00, real=0.00 secs] 
+2019-07-27T20:28:06.265+0000: 142.841: [GC (Allocation Failure) 2019-07-27T20:28:06.265+0000: 142.841: [DefNew: 410808K->1197K(460800K), 0.0033264 secs] 462577K->52966K(1484800K), 0.0033923 secs] [Times: user=0.00 sys=0.00, real=0.00 secs] 
+2019-07-27T20:28:13.982+0000: 150.559: [GC (Allocation Failure) 2019-07-27T20:28:13.982+0000: 150.559: [DefNew: 410797K->1206K(460800K), 0.0032636 secs] 462566K->52976K(1484800K), 0.0033246 secs] [Times: user=0.00 sys=0.00, real=0.00 secs] 
+2019-07-27T20:28:21.802+0000: 158.378: [GC (Allocation Failure) 2019-07-27T20:28:21.802+0000: 158.378: [DefNew: 410806K->1196K(460800K), 0.0030463 secs] 462576K->52965K(1484800K), 0.0031025 secs] [Times: user=0.01 sys=0.00, real=0.00 secs] 
+2019-07-27T20:28:29.569+0000: 166.145: [GC (Allocation Failure) 2019-07-27T20:28:29.569+0000: 166.145: [DefNew: 410796K->1203K(460800K), 0.0032454 secs] 462565K->52972K(1484800K), 0.0033028 secs] [Times: user=0.01 sys=0.00, real=0.01 secs] 
+2019-07-27T20:28:37.337+0000: 173.913: [GC (Allocation Failure) 2019-07-27T20:28:37.337+0000: 173.913: [DefNew: 410803K->250K(460800K), 0.0032935 secs] 462572K->52983K(1484800K), 0.0033521 secs] [Times: user=0.00 sys=0.00, real=0.01 secs] 
+2019-07-27T20:28:45.071+0000: 181.647: [GC (Allocation Failure) 2019-07-27T20:28:45.071+0000: 181.647: [DefNew: 409850K->209K(460800K), 0.0022590 secs] 462583K->52977K(1484800K), 0.0023294 secs] [Times: user=0.00 sys=0.00, real=0.00 secs] 
+2019-07-27T20:28:52.793+0000: 189.369: [GC (Allocation Failure) 2019-07-27T20:28:52.793+0000: 189.369: [DefNew: 409809K->173K(460800K), 0.0021348 secs] 462577K->52972K(1484800K), 0.0022013 secs] [Times: user=0.00 sys=0.00, real=0.00 secs] 
+2019-07-27T20:29:01.861+0000: 198.437: [GC (Allocation Failure) 2019-07-27T20:29:01.861+0000: 198.437: [DefNew: 409773K->211K(460800K), 0.0023769 secs] 462572K->53011K(1484800K), 0.0024416 secs] [Times: user=0.00 sys=0.00, real=0.00 secs] 
+2019-07-27T20:29:09.050+0000: 205.626: [GC (Allocation Failure) 2019-07-27T20:29:09.050+0000: 205.626: [DefNew: 409811K->142K(460800K), 0.0022074 secs] 462611K->53014K(1484800K), 0.0022773 secs] [Times: user=0.00 sys=0.00, real=0.01 secs] 
+2019-07-27T20:29:16.946+0000: 213.522: [GC (Allocation Failure) 2019-07-27T20:29:16.946+0000: 213.522: [DefNew: 409742K->118K(460800K), 0.0018747 secs] 462614K->52991K(1484800K), 0.0019319 secs] [Times: user=0.00 sys=0.00, real=0.00 secs] 
+2019-07-27T20:29:24.680+0000: 221.256: [GC (Allocation Failure) 2019-07-27T20:29:24.680+0000: 221.256: [DefNew: 409718K->114K(460800K), 0.0018988 secs] 462591K->52987K(1484800K), 0.0019726 secs] [Times: user=0.01 sys=0.00, real=0.00 secs] 
+2019-07-27T20:29:32.550+0000: 229.127: [GC (Allocation Failure) 2019-07-27T20:29:32.550+0000: 229.127: [DefNew: 409714K->136K(460800K), 0.0018926 secs] 462587K->53009K(1484800K), 0.0019638 secs] [Times: user=0.00 sys=0.00, real=0.00 secs] 
+2019-07-27T20:29:41.109+0000: 237.685: [GC (Allocation Failure) 2019-07-27T20:29:41.109+0000: 237.685: [DefNew: 409736K->119K(460800K), 0.0019727 secs] 462609K->52992K(1484800K), 0.0020324 secs] [Times: user=0.01 sys=0.00, real=0.01 secs] 
+2019-07-27T20:29:49.450+0000: 246.026: [GC (Allocation Failure) 2019-07-27T20:29:49.450+0000: 246.026: [DefNew: 409719K->185K(460800K), 0.0020995 secs] 462592K->53064K(1484800K), 0.0021561 secs] [Times: user=0.00 sys=0.00, real=0.01 secs] 
+2019-07-27T20:29:58.246+0000: 254.822: [GC (Allocation Failure) 2019-07-27T20:29:58.246+0000: 254.822: [DefNew: 409785K->188K(460800K), 0.0019759 secs] 462664K->53067K(1484800K), 0.0020313 secs] [Times: user=0.00 sys=0.00, real=0.00 secs] 
+2019-07-27T20:30:07.190+0000: 263.767: [GC (Allocation Failure) 2019-07-27T20:30:07.190+0000: 263.767: [DefNew: 409788K->138K(460800K), 0.0020418 secs] 462667K->53018K(1484800K), 0.0021073 secs] [Times: user=0.00 sys=0.00, real=0.01 secs] 
+2019-07-27T20:30:16.543+0000: 273.119: [GC (Allocation Failure) 2019-07-27T20:30:16.543+0000: 273.119: [DefNew: 409738K->178K(460800K), 0.0020760 secs] 462618K->53057K(1484800K), 0.0021369 secs] [Times: user=0.00 sys=0.00, real=0.00 secs] 
+2019-07-27T20:30:26.098+0000: 282.674: [GC (Allocation Failure) 2019-07-27T20:30:26.098+0000: 282.674: [DefNew: 409778K->182K(460800K), 0.0020107 secs] 462657K->53061K(1484800K), 0.0020762 secs] [Times: user=0.00 sys=0.00, real=0.01 secs] 
+2019-07-27T20:30:35.630+0000: 292.206: [GC (Allocation Failure) 2019-07-27T20:30:35.630+0000: 292.206: [DefNew: 409782K->280K(460800K), 0.0020222 secs] 462661K->53160K(1484800K), 0.0020827 secs] [Times: user=0.01 sys=0.00, real=0.01 secs] 
+2019-07-27T20:30:45.017+0000: 301.593: [GC (Allocation Failure) 2019-07-27T20:30:45.017+0000: 301.593: [DefNew: 409880K->162K(460800K), 0.0021034 secs] 462760K->53042K(1484800K), 0.0021716 secs] [Times: user=0.00 sys=0.00, real=0.01 secs] 
+2019-07-27T20:30:54.788+0000: 311.365: [GC (Allocation Failure) 2019-07-27T20:30:54.788+0000: 311.365: [DefNew: 409762K->174K(460800K), 0.0021502 secs] 462642K->53054K(1484800K), 0.0022051 secs] [Times: user=0.00 sys=0.00, real=0.01 secs] 
+2019-07-27T20:31:04.416+0000: 320.992: [GC (Allocation Failure) 2019-07-27T20:31:04.416+0000: 320.992: [DefNew: 409774K->170K(460800K), 0.0020717 secs] 462654K->53055K(1484800K), 0.0021339 secs] [Times: user=0.00 sys=0.00, real=0.00 secs] 
+2019-07-27T20:31:14.046+0000: 330.622: [GC (Allocation Failure) 2019-07-27T20:31:14.046+0000: 330.622: [DefNew: 409770K->175K(460800K), 0.0021051 secs] 462655K->53070K(1484800K), 0.0021671 secs] [Times: user=0.00 sys=0.00, real=0.00 secs] 
+2019-07-27T20:31:23.601+0000: 340.177: [GC (Allocation Failure) 2019-07-27T20:31:23.601+0000: 340.177: [DefNew: 409775K->555K(460800K), 0.0025571 secs] 462670K->53455K(1484800K), 0.0026436 secs] [Times: user=0.00 sys=0.00, real=0.00 secs] 
+2019-07-27T20:31:33.296+0000: 349.872: [GC (Allocation Failure) 2019-07-27T20:31:33.296+0000: 349.872: [DefNew: 410155K->614K(460800K), 0.0024158 secs] 463055K->53514K(1484800K), 0.0025087 secs] [Times: user=0.00 sys=0.00, real=0.01 secs] 
+2019-07-27T20:31:43.078+0000: 359.654: [GC (Allocation Failure) 2019-07-27T20:31:43.078+0000: 359.655: [DefNew: 410214K->238K(460800K), 0.0021455 secs] 463114K->53139K(1484800K), 0.0022062 secs] [Times: user=0.00 sys=0.00, real=0.01 secs] 
+2019-07-27T20:31:52.832+0000: 369.408: [GC (Allocation Failure) 2019-07-27T20:31:52.832+0000: 369.408: [DefNew: 409838K->347K(460800K), 0.0023304 secs] 462739K->53247K(1484800K), 0.0023864 secs] [Times: user=0.00 sys=0.00, real=0.00 secs] 
+2019-07-27T20:32:02.558+0000: 379.134: [GC (Allocation Failure) 2019-07-27T20:32:02.558+0000: 379.134: [DefNew: 409947K->374K(460800K), 0.0024517 secs] 462847K->53277K(1484800K), 0.0025170 secs] [Times: user=0.00 sys=0.00, real=0.01 secs] 
+2019-07-27T20:32:12.205+0000: 388.781: [GC (Allocation Failure) 2019-07-27T20:32:12.205+0000: 388.781: [DefNew: 409974K->224K(460800K), 0.0021782 secs] 462877K->53139K(1484800K), 0.0022593 secs] [Times: user=0.00 sys=0.00, real=0.00 secs] 
+2019-07-27T20:32:21.875+0000: 398.451: [GC (Allocation Failure) 2019-07-27T20:32:21.875+0000: 398.451: [DefNew: 409824K->201K(460800K), 0.0021912 secs] 462739K->53118K(1484800K), 0.0022459 secs] [Times: user=0.01 sys=0.00, real=0.00 secs] 
+2019-07-27T20:32:31.411+0000: 407.987: [GC (Allocation Failure) 2019-07-27T20:32:31.411+0000: 407.987: [DefNew: 409801K->389K(460800K), 0.0024850 secs] 462718K->53314K(1484800K), 0.0025536 secs] [Times: user=0.00 sys=0.00, real=0.00 secs] 
+2019-07-27T20:32:41.060+0000: 417.636: [GC (Allocation Failure) 2019-07-27T20:32:41.060+0000: 417.636: [DefNew: 409989K->282K(460800K), 0.0024658 secs] 462914K->53220K(1484800K), 0.0025467 secs] [Times: user=0.01 sys=0.00, real=0.00 secs] 
+2019-07-27T20:32:50.530+0000: 427.106: [GC (Allocation Failure) 2019-07-27T20:32:50.530+0000: 427.106: [DefNew: 409882K->350K(460800K), 0.0025068 secs] 462820K->53288K(1484800K), 0.0025705 secs] [Times: user=0.01 sys=0.00, real=0.01 secs] 
+2019-07-27T20:33:00.056+0000: 436.633: [GC (Allocation Failure) 2019-07-27T20:33:00.056+0000: 436.633: [DefNew: 409950K->210K(460800K), 0.0022561 secs] 462888K->53148K(1484800K), 0.0023151 secs] [Times: user=0.01 sys=0.00, real=0.01 secs] 
+2019-07-27T20:33:10.335+0000: 446.912: [GC (Allocation Failure) 2019-07-27T20:33:10.335+0000: 446.912: [DefNew: 409810K->206K(460800K), 0.0022569 secs] 462748K->53146K(1484800K), 0.0023256 secs] [Times: user=0.00 sys=0.00, real=0.00 secs] 
+2019-07-27T20:33:20.369+0000: 456.945: [GC (Allocation Failure) 2019-07-27T20:33:20.369+0000: 456.945: [DefNew: 409806K->213K(460800K), 0.0022040 secs] 462746K->53161K(1484800K), 0.0022666 secs] [Times: user=0.00 sys=0.00, real=0.01 secs] 
+2019-07-27T20:33:30.782+0000: 467.358: [GC (Allocation Failure) 2019-07-27T20:33:30.782+0000: 467.358: [DefNew: 409813K->186K(460800K), 0.0021367 secs] 462761K->53135K(1484800K), 0.0022088 secs] [Times: user=0.01 sys=0.00, real=0.00 secs] 
+2019-07-27T20:33:41.713+0000: 478.290: [GC (Allocation Failure) 2019-07-27T20:33:41.713+0000: 478.290: [DefNew: 409786K->170K(460800K), 0.0020148 secs] 462735K->53120K(1484800K), 0.0020765 secs] [Times: user=0.00 sys=0.00, real=0.00 secs] 
+20:33:44.846 [Client] INFO  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@10.0.0.157: has been disconnected from Connection 3
+20:33:57.535 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/edge/FlameSocketGraphDeployerFront - Stopped
+20:33:57.535 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$+ - Stopped
+20:33:57.535 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$0 - Stopped
+20:33:57.535 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$1 - Stopped
+20:33:57.536 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$2 - Stopped
+20:33:57.536 [worker-akka.actor.default-dispatcher-6] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$3 - Stopped
+20:33:57.536 [worker-akka.actor.default-dispatcher-6] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$4 - Stopped
+20:33:57.536 [worker-akka.actor.default-dispatcher-6] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$5 - Stopped
+20:33:57.536 [worker-akka.actor.default-dispatcher-6] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$6 - Stopped
+20:33:57.537 [worker-akka.actor.default-dispatcher-6] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$7 - Stopped
+20:33:57.540 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$8 - Stopped
+20:33:57.540 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$9 - Stopped
+20:33:57.540 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$A - Stopped
+20:33:57.541 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$Ab - Stopped
+20:33:57.547 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$B - Stopped
+20:33:57.547 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$Bb - Stopped
+20:33:57.547 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$C - Stopped
+20:33:57.547 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$Cb - Stopped
+20:33:57.548 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$D - Stopped
+20:33:57.550 [worker-akka.actor.default-dispatcher-5] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$Db - Stopped
+20:33:57.550 [worker-akka.actor.default-dispatcher-6] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$E - Stopped
+20:33:57.550 [worker-akka.actor.default-dispatcher-6] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$Eb - Stopped
+20:33:57.551 [worker-akka.actor.default-dispatcher-6] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$F - Stopped
+20:33:57.551 [worker-akka.actor.default-dispatcher-6] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$Fb - Stopped
+20:33:57.551 [worker-akka.actor.default-dispatcher-6] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$G - Stopped
+20:33:57.551 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$Gb - Stopped
+20:33:57.552 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$H - Stopped
+20:33:57.552 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$Hb - Stopped
+20:33:57.552 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$I - Stopped
+20:33:57.552 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$Ib - Stopped
+20:33:57.553 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$J - Stopped
+20:33:57.553 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$Jb - Stopped
+20:33:57.553 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$K - Stopped
+20:33:57.553 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$Kb - Stopped
+20:33:57.553 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/edge/FlameSocketGraphDeployerRear - Stopped
+20:33:57.554 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$L - Stopped
+20:33:57.554 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$Lb - Stopped
+20:33:57.554 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$M - Stopped
+20:33:57.554 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$Mb - Stopped
+20:33:57.554 [worker-akka.actor.default-dispatcher-3] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$N - Stopped
+20:33:57.561 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$Nb - Stopped
+20:33:57.561 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$O - Stopped
+20:33:57.561 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$P - Stopped
+20:33:57.561 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$Q - Stopped
+20:33:57.562 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$R - Stopped
+20:33:57.562 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$S - Stopped
+20:33:57.562 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$T - Stopped
+20:33:57.562 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$U - Stopped
+20:33:57.562 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$V - Stopped
+20:33:57.563 [worker-akka.actor.default-dispatcher-2] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$W - Stopped
+20:33:57.563 [worker-akka.actor.default-dispatcher-11] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$X - Stopped
+20:33:57.563 [worker-akka.actor.default-dispatcher-11] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$Y - Stopped
+20:33:57.563 [worker-akka.actor.default-dispatcher-11] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$Z - Stopped
+20:33:57.564 [worker-akka.actor.default-dispatcher-11] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$a - Stopped
+20:33:57.564 [worker-akka.actor.default-dispatcher-11] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$ab - Stopped
+20:33:57.564 [worker-akka.actor.default-dispatcher-6] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$b - Stopped
+20:33:57.564 [worker-akka.actor.default-dispatcher-6] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$bb - Stopped
+20:33:57.564 [worker-akka.actor.default-dispatcher-6] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$c - Stopped
+20:33:57.565 [worker-akka.actor.default-dispatcher-6] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$cb - Stopped
+20:33:57.565 [worker-akka.actor.default-dispatcher-6] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$d - Stopped
+20:33:57.565 [worker-akka.actor.default-dispatcher-11] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$db - Stopped
+20:33:57.565 [worker-akka.actor.default-dispatcher-11] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$e - Stopped
+20:33:57.566 [worker-akka.actor.default-dispatcher-11] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$eb - Stopped
+20:33:57.566 [worker-akka.actor.default-dispatcher-11] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$f - Stopped
+20:33:57.570 [worker-akka.actor.default-dispatcher-4] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$fb - Stopped
+20:33:57.570 [worker-akka.actor.default-dispatcher-4] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/edge - Stopped
+20:33:57.574 [worker-akka.actor.default-dispatcher-10] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/negotiator - Stopped
+20:33:57.574 [worker-akka.actor.default-dispatcher-14] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$g - Stopped
+20:33:57.575 [worker-akka.actor.default-dispatcher-14] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$gb - Stopped
+20:33:57.575 [worker-akka.actor.default-dispatcher-14] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$h - Stopped
+20:33:57.576 [worker-akka.actor.default-dispatcher-14] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$hb - Stopped
+20:33:57.576 [worker-akka.actor.default-dispatcher-14] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$i - Stopped
+20:33:57.577 [worker-akka.actor.default-dispatcher-14] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$ib - Stopped
+20:33:57.577 [worker-akka.actor.default-dispatcher-14] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$j - Stopped
+20:33:57.577 [worker-akka.actor.default-dispatcher-14] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$jb - Stopped
+20:33:57.578 [worker-akka.actor.default-dispatcher-16] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$k - Stopped
+20:33:57.578 [worker-akka.actor.default-dispatcher-16] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$kb - Stopped
+20:33:57.578 [worker-akka.actor.default-dispatcher-17] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$l - Stopped
+20:33:57.579 [worker-akka.actor.default-dispatcher-17] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$lb - Stopped
+20:33:57.579 [worker-akka.actor.default-dispatcher-17] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$m - Stopped
+20:33:57.579 [worker-akka.actor.default-dispatcher-17] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$mb - Stopped
+20:33:57.582 [worker-akka.actor.default-dispatcher-17] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$n - Stopped
+20:33:57.583 [worker-akka.actor.default-dispatcher-17] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$nb - Stopped
+20:33:57.585 [worker-akka.actor.default-dispatcher-17] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$o - Stopped
+20:33:57.589 [worker-akka.actor.default-dispatcher-17] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$ob - Stopped
+20:33:57.590 [worker-akka.actor.default-dispatcher-18] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$p - Stopped
+20:33:57.590 [worker-akka.actor.default-dispatcher-18] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$pb - Stopped
+20:33:57.591 [worker-akka.actor.default-dispatcher-18] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$q - Stopped
+20:33:57.591 [worker-akka.actor.default-dispatcher-18] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$qb - Stopped
+20:33:57.591 [worker-akka.actor.default-dispatcher-18] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$r - Stopped
+20:33:57.591 [worker-akka.actor.default-dispatcher-14] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$rb - Stopped
+20:33:57.591 [worker-akka.actor.default-dispatcher-14] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$s - Stopped
+20:33:57.592 [worker-akka.actor.default-dispatcher-14] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$sb - Stopped
+20:33:57.592 [worker-akka.actor.default-dispatcher-14] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$t - Stopped
+20:33:57.592 [worker-akka.actor.default-dispatcher-14] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$tb - Stopped
+20:33:57.592 [worker-akka.actor.default-dispatcher-14] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$u - Stopped
+20:33:57.592 [worker-akka.actor.default-dispatcher-14] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$ub - Stopped
+20:33:57.593 [worker-akka.actor.default-dispatcher-14] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$v - Stopped
+20:33:57.593 [worker-akka.actor.default-dispatcher-14] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$vb - Stopped
+20:33:57.593 [worker-akka.actor.default-dispatcher-14] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$w - Stopped
+20:33:57.593 [worker-akka.actor.default-dispatcher-16] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$wb - Stopped
+20:33:57.594 [worker-akka.actor.default-dispatcher-17] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$x - Stopped
+20:33:57.595 [worker-akka.actor.default-dispatcher-17] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$xb - Stopped
+20:33:57.597 [worker-akka.actor.default-dispatcher-17] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$y - Stopped
+20:33:57.599 [worker-akka.actor.default-dispatcher-17] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$yb - Stopped
+20:33:57.600 [worker-akka.actor.default-dispatcher-17] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$z - Stopped
+20:33:57.602 [worker-akka.actor.default-dispatcher-18] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$zb - Stopped
+20:33:57.602 [worker-akka.actor.default-dispatcher-18] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$~ - Stopped
+20:33:57.615 [worker-akka.actor.default-dispatcher-17] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph - Stopped
+20:33:57.619 [worker-akka.actor.default-dispatcher-17] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph - Stopped
+20:33:57.619 [worker-akka.actor.default-dispatcher-17] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher - Stopped
+20:33:57.620 [Curator-Framework-0] INFO  o.a.c.f.i.CuratorFrameworkImpl  - backgroundOperationsLoop exiting
+20:33:57.626 [worker-akka.actor.default-dispatcher-4-EventThread] INFO  o.a.z.ClientCnxn  - EventThread shut down for session: 0x1007717bcea0003
+20:33:57.626 [worker-akka.actor.default-dispatcher-17] INFO  o.a.z.ZooKeeper  - Session: 0x1007717bcea0003 closed
+20:33:57.626 [worker-akka.actor.default-dispatcher-3] INFO  a.a.RepointableActorRef akka://worker/user/watcher - Stopped
+20:33:57.626 [Curator-PathChildrenCache-0] ERROR o.a.c.f.r.c.PathChildrenCache  - 
+java.lang.IllegalStateException: instance must be started before calling this method
+	at org.apache.curator.shaded.com.google.common.base.Preconditions.checkState(Preconditions.java:444)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getChildren(CuratorFrameworkImpl.java:456)
+	at org.apache.curator.framework.recipes.cache.PathChildrenCache.refresh(PathChildrenCache.java:521)
+	at org.apache.curator.framework.recipes.cache.RefreshOperation.invoke(RefreshOperation.java:35)
+	at org.apache.curator.framework.recipes.cache.PathChildrenCache$9.run(PathChildrenCache.java:786)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+20:33:57.637 [worker-akka.actor.default-dispatcher-17] INFO  a.r.RemoteActorRefProvider$RemotingTerminator akka://worker@10.0.0.157:5412/system/remoting-terminator - Shutting down remote daemon.
+20:33:57.638 [worker-akka.actor.default-dispatcher-17] INFO  a.r.RemoteActorRefProvider$RemotingTerminator akka://worker@10.0.0.157:5412/system/remoting-terminator - Remote daemon shut down; proceeding with flushing remote transports.
+20:33:58.863 [worker-akka.actor.default-dispatcher-5] INFO  a.r.RemoteActorRefProvider$RemotingTerminator akka://worker@10.0.0.157:5412/system/remoting-terminator - Remoting shut down.
+Heap
+ def new generation   total 460800K, used 160746K [0x00000000a2400000, 0x00000000c1800000, 0x00000000c1800000)
+  eden space 409600K,  39% used [0x00000000a2400000, 0x00000000ac0d0040, 0x00000000bb400000)
+  from space 51200K,   0% used [0x00000000be600000, 0x00000000be62ab30, 0x00000000c1800000)
+  to   space 51200K,   0% used [0x00000000bb400000, 0x00000000bb400000, 0x00000000be600000)
+ tenured generation   total 1024000K, used 52949K [0x00000000c1800000, 0x0000000100000000, 0x0000000100000000)
+   the space 1024000K,   5% used [0x00000000c1800000, 0x00000000c4bb56d8, 0x00000000c4bb5800, 0x0000000100000000)
+ Metaspace       used 36467K, capacity 37280K, committed 37376K, reserved 1081344K
+  class space    used 4893K, capacity 5060K, committed 5120K, reserved 1048576K

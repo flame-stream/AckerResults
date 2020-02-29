@@ -1,0 +1,991 @@
+19:49:32,979 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+19:49:32,979 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+19:49:32,979 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [jar:file:/home/ubuntu/flamestream/lib/flamestream-runtime-1.0-SNAPSHOT.jar!/logback.xml]
+19:49:33,005 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@4411d970 - URL [jar:file:/home/ubuntu/flamestream/lib/flamestream-runtime-1.0-SNAPSHOT.jar!/logback.xml] is not of type file
+19:49:33,074 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+19:49:33,076 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+19:49:33,092 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+19:49:33,111 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+19:49:33,233 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+19:49:33,238 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [FILE]
+19:49:33,287 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1682092198 - No compression will be used
+19:49:33,290 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1682092198 - Will use the pattern /tmp/application_%d{yyyy-MM-dd}.%i.log for the active file
+19:49:33,293 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@60f82f98 - The date pattern is 'yyyy-MM-dd' from file name pattern '/tmp/application_%d{yyyy-MM-dd}.%i.log'.
+19:49:33,293 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@60f82f98 - Roll-over at midnight.
+19:49:33,299 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@60f82f98 - Setting initial period to Sat Oct 05 19:41:01 UTC 2019
+19:49:33,299 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@60f82f98 - SizeAndTimeBasedFNATP is deprecated. Use SizeAndTimeBasedRollingPolicy instead
+19:49:33,299 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@60f82f98 - For more information see http://logback.qos.ch/manual/appenders.html#SizeAndTimeBasedRollingPolicy
+19:49:33,304 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+19:49:33,312 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - Active log file name: /tmp/application.log
+19:49:33,312 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - File property is set to [/tmp/application.log]
+19:49:33,313 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to INFO
+19:49:33,313 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+19:49:33,314 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [FILE] to Logger[ROOT]
+19:49:33,314 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+19:49:33,315 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@35f983a6 - Registering current configuration as safe fallback point
+
+19:49:33.676 [main] INFO  o.a.c.u.Compatibility  - Running in ZooKeeper 3.4.x compatibility mode
+19:49:33.711 [main] INFO  o.a.c.f.i.CuratorFrameworkImpl  - Starting
+19:49:33.721 [main] INFO  o.a.z.ZooKeeper  - Client environment:zookeeper.version=3.4.14-4c25d480e66aadd371de8bd2fd8da255ac140bcf, built on 03/06/2019 16:18 GMT
+19:49:33.722 [main] INFO  o.a.z.ZooKeeper  - Client environment:host.name=flamestream-benchmarks-manager
+19:49:33.722 [main] INFO  o.a.z.ZooKeeper  - Client environment:java.version=1.8.0_222
+19:49:33.723 [main] INFO  o.a.z.ZooKeeper  - Client environment:java.vendor=Private Build
+19:49:33.723 [main] INFO  o.a.z.ZooKeeper  - Client environment:java.home=/usr/lib/jvm/java-8-openjdk-amd64/jre
+19:49:33.723 [main] INFO  o.a.z.ZooKeeper  - Client environment:java.class.path=/home/ubuntu/flamestream/lib/curator-framework-4.0.1.jar:/home/ubuntu/flamestream/lib/commons-csv-1.4.jar:/home/ubuntu/flamestream/lib/aeron-client-1.21.2.jar:/home/ubuntu/flamestream/lib/scala-library-2.12.9.jar:/home/ubuntu/flamestream/lib/asm-5.0.4.jar:/home/ubuntu/flamestream/lib/agrona-1.0.1.jar:/home/ubuntu/flamestream/lib/curator-recipes-4.0.1.jar:/home/ubuntu/flamestream/lib/akka-testkit_2.12-2.6.0-M6.jar:/home/ubuntu/flamestream/lib/flamestream-runtime-1.0-SNAPSHOT.jar:/home/ubuntu/flamestream/lib/slf4j-simple-2.0.0-alpha1.jar:/home/ubuntu/flamestream/lib/jsr305-3.0.2.jar:/home/ubuntu/flamestream/lib/trove4j-3.0.3.jar:/home/ubuntu/flamestream/lib/flamestream-core-1.0-SNAPSHOT.jar:/home/ubuntu/flamestream/lib/commons-io-2.4.jar:/home/ubuntu/flamestream/lib/minlog-1.3.0.jar:/home/ubuntu/flamestream/lib/kryonet-2.21.jar:/home/ubuntu/flamestream/lib/commons-1.4.9.jar:/home/ubuntu/flamestream/lib/jline-0.9.94.jar:/home/ubuntu/flamestream/lib/akka-remote_2.12-2.6.0-M6.jar:/home/ubuntu/flamestream/lib/leveldbjni-all-1.8.jar:/home/ubuntu/flamestream/lib/lz4-1.3.0.jar:/home/ubuntu/flamestream/lib/slf4j-api-1.7.24.jar:/home/ubuntu/flamestream/lib/scala-parser-combinators_2.12-1.1.2.jar:/home/ubuntu/flamestream/lib/flamestream-core-1.0-SNAPSHOT-tests.jar:/home/ubuntu/flamestream/lib/logback-core-1.2.3.jar:/home/ubuntu/flamestream/lib/netty-3.10.6.Final.jar:/home/ubuntu/flamestream/lib/protobuf-java-3.9.0.jar:/home/ubuntu/flamestream/lib/minlog-1.2.jar:/home/ubuntu/flamestream/lib/leveldb-api-0.7.jar:/home/ubuntu/flamestream/lib/jool-0.9.12.jar:/home/ubuntu/flamestream/lib/commons-cli-1.4.jar:/home/ubuntu/flamestream/lib/jblas-1.2.4.jar:/home/ubuntu/flamestream/lib/reflectasm-1.11.3.jar:/home/ubuntu/flamestream/lib/reflectasm-1.07-shaded.jar:/home/ubuntu/flamestream/lib/audience-annotations-0.5.0.jar:/home/ubuntu/flamestream/lib/jackson-annotations-2.9.6.jar:/home/ubuntu/flamestream/lib/commons-lang-2.6.jar:/home/ubuntu/flamestream/lib/ssl-config-core_2.12-0.3.8.jar:/home/ubuntu/flamestream/lib/annotations-13.0.jar:/home/ubuntu/flamestream/lib/logback-classic-1.2.3.jar:/home/ubuntu/flamestream/lib/guava-21.0.jar:/home/ubuntu/flamestream/lib/reactive-streams-1.0.2.jar:/home/ubuntu/flamestream/lib/spotbugs-annotations-3.1.9.jar:/home/ubuntu/flamestream/lib/leveldb-0.7.jar:/home/ubuntu/flamestream/lib/commons-pool2-2.4.2.jar:/home/ubuntu/flamestream/lib/rocksdbjni-5.5.1.jar:/home/ubuntu/flamestream/lib/jackson-core-2.9.9.jar:/home/ubuntu/flamestream/lib/jackson-databind-2.9.9.2.jar:/home/ubuntu/flamestream/lib/akka-protobuf-v3_2.12-2.6.0-M6.jar:/home/ubuntu/flamestream/lib/jackson-annotations-2.9.0.jar:/home/ubuntu/flamestream/lib/flamestream-examples-1.0-SNAPSHOT.jar:/home/ubuntu/flamestream/lib/objenesis-2.1.jar:/home/ubuntu/flamestream/lib/akka-kryo-serialization_2.12-0.5.2.jar:/home/ubuntu/flamestream/lib/scala-java8-compat_2.12-0.8.0.jar:/home/ubuntu/flamestream/lib/zookeeper-3.4.14.jar:/home/ubuntu/flamestream/lib/akka-slf4j_2.12-2.6.0-M6.jar:/home/ubuntu/flamestream/lib/kryo-4.0.0.jar:/home/ubuntu/flamestream/lib/akka-stream_2.12-2.6.0-M6.jar:/home/ubuntu/flamestream/lib/aeron-driver-1.21.2.jar:/home/ubuntu/flamestream/lib/config-1.3.1.jar:/home/ubuntu/flamestream/lib/annotations-12.0.jar:/home/ubuntu/flamestream/lib/jedis-2.9.0.jar:/home/ubuntu/flamestream/lib/jcommander-1.48.jar:/home/ubuntu/flamestream/lib/testng-6.10.jar:/home/ubuntu/flamestream/lib/akka-actor_2.12-2.6.0-M6.jar:/home/ubuntu/flamestream/lib/curator-client-4.0.1.jar
+19:49:33.723 [main] INFO  o.a.z.ZooKeeper  - Client environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+19:49:33.724 [main] INFO  o.a.z.ZooKeeper  - Client environment:java.io.tmpdir=/tmp
+19:49:33.724 [main] INFO  o.a.z.ZooKeeper  - Client environment:java.compiler=<NA>
+19:49:33.724 [main] INFO  o.a.z.ZooKeeper  - Client environment:os.name=Linux
+19:49:33.724 [main] INFO  o.a.z.ZooKeeper  - Client environment:os.arch=amd64
+19:49:33.724 [main] INFO  o.a.z.ZooKeeper  - Client environment:os.version=4.15.0-1040-gcp
+19:49:33.724 [main] INFO  o.a.z.ZooKeeper  - Client environment:user.name=ubuntu
+19:49:33.724 [main] INFO  o.a.z.ZooKeeper  - Client environment:user.home=/home/ubuntu
+19:49:33.726 [main] INFO  o.a.z.ZooKeeper  - Client environment:user.dir=/home/ubuntu
+19:49:33.727 [main] INFO  o.a.z.ZooKeeper  - Initiating client connection, connectString=flamestream-benchmarks-manager:12181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@2357d90a
+19:49:33.754 [main-SendThread(flamestream-benchmarks-manager:12181)] INFO  o.a.z.ClientCnxn  - Opening socket connection to server flamestream-benchmarks-manager/10.0.0.2:12181. Will not attempt to authenticate using SASL (unknown error)
+19:49:33.759 [main] INFO  o.a.c.f.i.CuratorFrameworkImpl  - Default schema
+19:49:33.776 [main-SendThread(flamestream-benchmarks-manager:12181)] INFO  o.a.z.ClientCnxn  - Socket connection established to flamestream-benchmarks-manager/10.0.0.2:12181, initiating session
+19:49:33.793 [main-SendThread(flamestream-benchmarks-manager:12181)] INFO  o.a.z.ClientCnxn  - Session establishment complete on server flamestream-benchmarks-manager/10.0.0.2:12181, sessionid = 0x1000214191b0064, negotiated timeout = 60000
+19:49:33.805 [main-EventThread] INFO  o.a.c.f.s.ConnectionStateManager  - State change: CONNECTED
+2019-10-05T19:49:35.011+0000: 2.227: [Full GC (Metadata GC Threshold) 2019-10-05T19:49:35.011+0000: 2.227: [Tenured: 0K->15553K(1024000K), 0.0602200 secs] 131073K->15553K(1484800K), [Metaspace: 20859K->20859K(1067008K)], 0.0606059 secs] [Times: user=0.04 sys=0.01, real=0.06 secs] 
+19:49:35.166 [main] INFO  c.s.f.r.RemoteRuntime  - Pushing graph com.spbsu.flamestream.core.Graph$Builder$MyGraph@42530531
+19:49:35.206 [main] INFO  c.s.f.r.RemoteRuntime  - Attaching rear id: 'FlameSocketGraphDeployerRear', type: 'com.spbsu.flamestream.runtime.edge.socket.SocketRearType@34f22f9d'
+19:49:35.345 [main] INFO  c.s.f.r.RemoteRuntime  - Attaching front id: 'FlameSocketGraphDeployerFront', type: 'com.spbsu.flamestream.runtime.edge.socket.SocketFrontType@7776ab'
+19:49:50.807 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 1, /10.0.0.58:44892
+19:49:50.964 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.58:55396
+19:49:50.965 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Closing connection /10.0.0.58:55396
+19:49:52.398 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 2, /10.0.0.228:39652
+19:49:52.469 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 3, /10.0.0.222:40454
+19:49:52.499 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.228:43690
+19:49:52.500 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.228:43690
+19:49:52.656 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 4, /10.0.0.216:43522
+19:49:52.747 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.222:56854
+19:49:52.748 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Closing connection /10.0.0.222:56854
+19:49:52.835 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.216:39958
+19:49:52.835 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Closing connection /10.0.0.216:39958
+19:49:57.694 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 5, /10.0.0.25:41234
+19:49:58.018 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.25:44456
+19:49:58.019 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.25:44456
+19:50:01.727 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 6, /10.0.0.202:36164
+19:50:01.832 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.202:47546
+19:50:01.832 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.202:47546
+19:50:04.473 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 7, /10.0.0.194:33958
+19:50:04.565 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.194:55810
+19:50:04.566 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.194:55810
+19:50:04.760 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 8, /10.0.0.214:44922
+19:50:04.810 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.214:36144
+19:50:04.810 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.214:36144
+19:50:06.160 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 9, /10.0.0.6:45740
+19:50:06.310 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.6:42050
+19:50:06.311 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.6:42050
+19:50:08.163 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 10, /10.0.0.203:58552
+19:50:08.283 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.203:52986
+19:50:08.283 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.203:52986
+19:50:09.118 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 11, /10.0.0.53:39878
+19:50:09.241 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.53:37894
+19:50:09.242 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.53:37894
+19:50:10.390 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 12, /10.0.0.225:33132
+19:50:10.477 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.225:52320
+19:50:10.477 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.225:52320
+19:50:10.482 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 13, /10.0.0.18:53740
+19:50:10.597 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.18:60650
+19:50:10.598 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.18:60650
+19:50:11.467 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 14, /10.0.0.27:45280
+19:50:11.615 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.27:55772
+19:50:11.615 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.27:55772
+19:50:11.771 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 15, /10.0.0.20:37206
+19:50:11.920 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.20:39846
+19:50:11.921 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.20:39846
+19:50:12.058 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 16, /10.0.0.217:34218
+19:50:12.175 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.217:47854
+19:50:12.175 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.217:47854
+19:50:12.891 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 17, /10.0.0.4:41600
+19:50:12.986 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.4:57830
+19:50:12.986 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.4:57830
+19:50:13.562 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 18, /10.0.0.210:44662
+19:50:13.571 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 19, /10.0.0.42:46084
+19:50:13.684 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.42:41322
+19:50:13.685 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.42:41322
+19:50:13.709 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.210:34382
+19:50:13.709 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.210:34382
+19:50:13.969 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 20, /10.0.0.16:59154
+19:50:14.107 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.16:47138
+19:50:14.107 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.16:47138
+19:50:14.594 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 21, /10.0.0.197:44228
+19:50:14.659 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.197:42780
+19:50:14.660 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.197:42780
+19:50:14.778 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 22, /10.0.0.10:50956
+19:50:14.914 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.10:33960
+19:50:14.914 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.10:33960
+19:50:17.288 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 23, /10.0.0.29:50984
+19:50:17.355 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.29:37062
+19:50:17.356 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.29:37062
+19:50:17.470 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 24, /10.0.0.19:52846
+19:50:17.554 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.19:58558
+19:50:17.555 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.19:58558
+19:50:17.653 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 25, /10.0.0.46:46010
+19:50:17.778 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.46:46318
+19:50:17.778 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.46:46318
+19:50:18.242 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 26, /10.0.0.62:42996
+19:50:18.372 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.62:49860
+19:50:18.373 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.62:49860
+19:50:18.776 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 27, /10.0.0.209:53030
+19:50:18.910 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.209:43464
+19:50:18.910 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.209:43464
+19:50:19.212 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 28, /10.0.0.57:50424
+19:50:19.341 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.57:54386
+19:50:19.341 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.57:54386
+19:50:19.617 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 29, /10.0.0.15:55836
+19:50:19.710 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.15:59538
+19:50:19.711 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.15:59538
+19:50:19.761 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 30, /10.0.0.54:53726
+19:50:19.876 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.54:41598
+19:50:19.876 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.54:41598
+19:50:21.216 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 31, /10.0.0.196:54524
+19:50:21.369 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.196:53358
+19:50:21.370 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.196:53358
+19:50:21.856 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 32, /10.0.0.17:38492
+19:50:21.938 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 33, /10.0.0.48:36652
+19:50:21.986 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.17:40084
+19:50:21.986 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.17:40084
+19:50:22.059 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.48:35188
+19:50:22.060 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.48:35188
+19:50:22.062 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 34, /10.0.0.230:48522
+19:50:22.149 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.230:56518
+19:50:22.151 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.230:56518
+19:50:22.401 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 35, /10.0.0.59:60636
+19:50:22.502 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.59:44232
+19:50:22.503 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.59:44232
+19:50:22.518 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 36, /10.0.0.14:60838
+19:50:22.667 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.14:34776
+19:50:22.667 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.14:34776
+19:50:22.736 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 37, /10.0.0.50:46496
+19:50:22.866 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.50:46590
+19:50:22.866 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.50:46590
+19:50:22.970 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 38, /10.0.0.63:52960
+19:50:23.103 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.63:51282
+19:50:23.103 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.63:51282
+19:50:23.106 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 39, /10.0.0.23:56830
+19:50:23.132 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 40, /10.0.0.36:45570
+19:50:23.181 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 41, /10.0.0.32:53536
+19:50:23.194 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.36:45212
+19:50:23.195 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.36:45212
+19:50:23.226 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.23:48282
+19:50:23.226 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.23:48282
+19:50:23.251 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 42, /10.0.0.7:40812
+19:50:23.257 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.32:37624
+19:50:23.262 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.32:37624
+19:50:23.360 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.7:34676
+19:50:23.361 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.7:34676
+19:50:23.466 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 43, /10.0.0.221:35000
+19:50:23.573 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.221:58434
+19:50:23.573 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.221:58434
+19:50:23.784 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 44, /10.0.0.31:54568
+19:50:23.846 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 45, /10.0.0.193:60402
+19:50:23.903 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.193:34004
+19:50:23.903 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.193:34004
+19:50:23.906 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.31:44508
+19:50:23.906 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.31:44508
+19:50:23.929 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 46, /10.0.0.224:42212
+19:50:23.941 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 47, /10.0.0.206:53184
+19:50:24.033 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.224:56878
+19:50:24.033 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.224:56878
+19:50:24.104 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.206:57962
+19:50:24.105 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.206:57962
+19:50:24.219 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 48, /10.0.0.40:38794
+19:50:24.315 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.40:42612
+19:50:24.315 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.40:42612
+19:50:24.429 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 49, /10.0.0.204:41514
+19:50:24.489 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 50, /10.0.0.43:36000
+19:50:24.536 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 51, /10.0.0.45:50212
+19:50:24.537 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.204:54122
+19:50:24.537 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.204:54122
+19:50:24.555 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 52, /10.0.0.207:35248
+19:50:24.623 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.207:47650
+19:50:24.624 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.207:47650
+19:50:24.634 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.43:47244
+19:50:24.634 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.43:47244
+19:50:24.649 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.45:45594
+19:50:24.649 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.45:45594
+19:50:24.656 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 53, /10.0.0.199:52532
+19:50:24.781 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.199:53394
+19:50:24.782 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.199:53394
+19:50:25.108 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 54, /10.0.0.47:42572
+19:50:25.115 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 55, /10.0.0.220:51776
+19:50:25.185 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 56, /10.0.0.9:50658
+19:50:25.186 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 57, /10.0.0.33:36616
+19:50:25.212 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.220:55348
+19:50:25.215 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.220:55348
+19:50:25.236 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.47:53242
+19:50:25.239 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.47:53242
+19:50:25.280 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.9:38968
+19:50:25.280 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.9:38968
+19:50:25.323 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.33:42822
+19:50:25.323 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.33:42822
+19:50:25.386 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 58, /10.0.0.213:45074
+19:50:25.437 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 59, /10.0.0.211:38094
+19:50:25.451 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 60, /10.0.0.229:41938
+19:50:25.457 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 61, /10.0.0.60:57686
+19:50:25.537 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.213:57754
+19:50:25.537 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.213:57754
+19:50:25.539 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.211:58042
+19:50:25.542 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.211:58042
+19:50:25.564 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 62, /10.0.0.41:50334
+19:50:25.569 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.229:49954
+19:50:25.569 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.229:49954
+19:50:25.577 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.60:37624
+19:50:25.578 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.60:37624
+19:50:25.698 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.41:53216
+19:50:25.699 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.41:53216
+19:50:25.738 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 63, /10.0.0.38:36212
+19:50:25.798 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.38:43166
+19:50:25.798 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.38:43166
+19:50:25.917 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 64, /10.0.0.208:53614
+19:50:26.039 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.208:35816
+19:50:26.039 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.208:35816
+19:50:26.103 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 65, /10.0.0.34:60778
+19:50:26.221 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.34:49856
+19:50:26.222 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.34:49856
+19:50:26.260 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 66, /10.0.0.37:59706
+19:50:26.358 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.37:41724
+19:50:26.358 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.37:41724
+19:50:26.378 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 67, /10.0.0.44:58060
+19:50:26.465 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.44:52300
+19:50:26.466 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.44:52300
+19:50:26.564 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 68, /10.0.0.39:40330
+19:50:26.660 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.39:57778
+19:50:26.660 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.39:57778
+19:50:26.670 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 69, /10.0.0.13:56240
+19:50:26.780 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 70, /10.0.0.205:47408
+19:50:26.794 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.13:58982
+19:50:26.794 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.13:58982
+19:50:26.808 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 71, /10.0.0.51:55860
+19:50:26.902 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.205:39804
+19:50:26.902 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.205:39804
+19:50:26.950 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 72, /10.0.0.219:42218
+19:50:27.001 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.51:48406
+19:50:27.001 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.51:48406
+19:50:27.099 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.219:58866
+19:50:27.099 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.219:58866
+19:50:27.142 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 73, /10.0.0.201:41862
+19:50:27.199 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 74, /10.0.0.200:50140
+19:50:27.255 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.201:53504
+19:50:27.255 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.201:53504
+19:50:27.308 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.200:45648
+19:50:27.309 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.200:45648
+19:50:27.406 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 75, /10.0.0.49:35430
+19:50:27.529 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 76, /10.0.0.5:55362
+19:50:27.530 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.49:38280
+19:50:27.530 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.49:38280
+19:50:27.652 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.5:58764
+19:50:27.653 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.5:58764
+19:50:27.706 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 77, /10.0.0.227:33326
+19:50:27.784 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 78, /10.0.0.195:49772
+19:50:27.839 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.227:56184
+19:50:27.840 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.227:56184
+19:50:27.877 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.195:48846
+19:50:27.877 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.195:48846
+19:50:27.910 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 79, /10.0.0.8:46042
+19:50:27.963 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.8:52134
+19:50:27.963 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.8:52134
+19:50:28.016 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 80, /10.0.0.215:39968
+19:50:28.064 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 81, /10.0.0.30:41822
+19:50:28.142 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.215:49128
+19:50:28.143 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.215:49128
+19:50:28.151 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.30:39158
+19:50:28.152 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.30:39158
+19:50:28.182 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 82, /10.0.0.24:41810
+19:50:28.249 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 83, /10.0.0.218:56226
+19:50:28.297 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.24:53392
+19:50:28.297 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.24:53392
+19:50:28.367 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.218:60308
+19:50:28.367 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.218:60308
+19:50:28.414 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 84, /10.0.0.55:45998
+19:50:28.518 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 85, /10.0.0.3:42148
+19:50:28.527 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.55:60884
+19:50:28.527 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.55:60884
+19:50:28.570 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 86, /10.0.0.35:50972
+19:50:28.632 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.3:60548
+19:50:28.633 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.3:60548
+19:50:28.655 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 87, /10.0.0.61:45112
+19:50:28.698 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.35:58418
+19:50:28.698 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.35:58418
+19:50:28.760 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.61:39736
+19:50:28.761 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.61:39736
+19:50:28.787 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 88, /10.0.0.198:53380
+19:50:28.846 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 89, /10.0.0.22:54012
+19:50:28.852 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.198:41518
+19:50:28.852 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.198:41518
+19:50:28.966 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.22:52810
+19:50:28.966 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.22:52810
+19:50:28.972 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 90, /10.0.0.56:39516
+19:50:28.981 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 91, /10.0.0.212:43666
+19:50:29.028 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.212:46386
+19:50:29.028 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.212:46386
+19:50:29.058 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.56:46160
+19:50:29.059 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.56:46160
+19:50:29.084 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 92, /10.0.0.21:45920
+19:50:29.093 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 93, /10.0.0.28:59984
+19:50:29.165 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.21:36540
+19:50:29.165 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.21:36540
+19:50:29.176 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 94, /10.0.0.223:58478
+19:50:29.261 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 95, /10.0.0.52:44854
+19:50:29.263 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.28:39904
+19:50:29.263 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.28:39904
+19:50:29.288 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.223:45230
+19:50:29.288 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.223:45230
+19:50:29.351 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.52:55108
+19:50:29.351 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.52:55108
+19:50:29.577 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 96, /10.0.0.11:53422
+19:50:29.613 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 97, /10.0.0.226:57384
+19:50:29.614 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 98, /10.0.0.192:60350
+19:50:29.621 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 99, /10.0.0.26:60784
+19:50:29.675 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.26:43984
+19:50:29.675 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.26:43984
+19:50:29.708 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.11:42612
+19:50:29.708 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.11:42612
+19:50:29.755 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.192:60440
+19:50:29.758 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.192:60440
+19:50:29.771 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.226:39554
+19:50:29.771 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.226:39554
+19:50:30.049 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been connected Connection 100, /10.0.0.12:54142
+19:50:30.187 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - There is new connection: /10.0.0.12:44608
+19:50:30.187 [Server] INFO  c.s.f.e.b.BenchStandComponentFactory  - Accepting connection: /10.0.0.12:44608
+19:50:30.398 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -99996, Progress: 0/200000
+19:50:30.399 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 1, dataItems.peek() = -99996, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:50:31.399 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -98875, Progress: 0/200000
+19:50:31.399 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 936, dataItems.peek() = -99806, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:50:32.400 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -97854, Progress: 0/200000
+19:50:32.401 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 1362, dataItems.peek() = -99224, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:50:33.402 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -96851, Progress: 0/200000
+19:50:33.402 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 1981, dataItems.peek() = -98836, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:50:34.402 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -95843, Progress: 0/200000
+19:50:34.402 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 2408, dataItems.peek() = -98254, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:50:35.404 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -94853, Progress: 0/200000
+19:50:35.405 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 2628, dataItems.peek() = -97478, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:50:36.404 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -93836, Progress: 0/200000
+19:50:36.405 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 3253, dataItems.peek() = -97090, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:50:37.406 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -92841, Progress: 0/200000
+19:50:37.407 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 3089, dataItems.peek() = -95926, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:50:38.406 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -91821, Progress: 0/200000
+19:50:38.407 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 2542, dataItems.peek() = -94374, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:50:39.407 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -90834, Progress: 0/200000
+19:50:39.409 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 1012, dataItems.peek() = -91852, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:50:40.410 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -89825, Progress: 0/200000
+19:50:40.410 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 154, dataItems.peek() = -89919, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:50:41.410 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -88848, Progress: 0/200000
+19:50:41.410 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 178, dataItems.peek() = -88949, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:50:42.410 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -87839, Progress: 0/200000
+19:50:42.410 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 8, dataItems.peek() = -87864, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:50:43.410 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -86846, Progress: 0/200000
+19:50:43.410 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 17, dataItems.peek() = -86871, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:50:44.411 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -85840, Progress: 0/200000
+19:50:44.413 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 59, dataItems.peek() = -85845, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:50:45.411 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -84828, Progress: 0/200000
+19:50:45.412 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 115, dataItems.peek() = -84948, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:50:46.412 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -83844, Progress: 0/200000
+19:50:46.412 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 135, dataItems.peek() = -83905, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:50:47.412 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -82828, Progress: 0/200000
+19:50:47.413 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 175, dataItems.peek() = -83009, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:50:48.412 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -81828, Progress: 0/200000
+19:50:48.413 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 2, dataItems.peek() = -81828, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:50:49.413 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -80824, Progress: 0/200000
+19:50:49.415 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 21, dataItems.peek() = -80867, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:50:50.413 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -79823, Progress: 0/200000
+19:50:50.414 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 63, dataItems.peek() = -79898, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:50:51.414 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -78828, Progress: 0/200000
+19:50:51.415 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 87, dataItems.peek() = -78861, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:50:52.415 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -77819, Progress: 0/200000
+19:50:52.415 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 128, dataItems.peek() = -77964, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:50:53.417 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -76827, Progress: 0/200000
+19:50:53.417 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 162, dataItems.peek() = -76992, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:50:54.420 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -75819, Progress: 0/200000
+19:50:54.422 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 179, dataItems.peek() = -75951, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:50:55.420 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -74822, Progress: 0/200000
+19:50:55.420 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 10, dataItems.peek() = -74851, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:50:56.421 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -73829, Progress: 0/200000
+19:50:56.421 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 57, dataItems.peek() = -73896, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:50:57.421 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -72839, Progress: 0/200000
+19:50:57.421 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 78, dataItems.peek() = -72847, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:50:58.422 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -71830, Progress: 0/200000
+19:50:58.424 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 107, dataItems.peek() = -71877, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:50:59.422 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -70823, Progress: 0/200000
+19:50:59.425 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 244, dataItems.peek() = -71099, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:00.423 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -69820, Progress: 0/200000
+19:51:00.423 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 108, dataItems.peek() = -70025, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:01.424 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -68822, Progress: 0/200000
+19:51:01.424 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 125, dataItems.peek() = -69005, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:02.424 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -67824, Progress: 0/200000
+19:51:02.424 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 197, dataItems.peek() = -67997, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:03.424 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -66836, Progress: 0/200000
+19:51:03.424 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 68, dataItems.peek() = -66833, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:04.425 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -65815, Progress: 0/200000
+19:51:04.427 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 210, dataItems.peek() = -66056, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:05.425 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -64820, Progress: 0/200000
+19:51:05.426 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 138, dataItems.peek() = -64893, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:06.425 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -63814, Progress: 0/200000
+19:51:06.426 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 271, dataItems.peek() = -64110, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:07.426 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -62904, Progress: 0/200000
+19:51:07.426 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 114, dataItems.peek() = -62946, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:08.426 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -61812, Progress: 0/200000
+19:51:08.427 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 196, dataItems.peek() = -61983, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:09.426 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -60818, Progress: 0/200000
+19:51:09.428 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 6, dataItems.peek() = -60818, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:10.427 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -59806, Progress: 0/200000
+19:51:10.427 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 103, dataItems.peek() = -59849, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:11.427 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -58819, Progress: 0/200000
+19:51:11.428 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 59, dataItems.peek() = -58927, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:12.428 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -57819, Progress: 0/200000
+19:51:12.428 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 138, dataItems.peek() = -57909, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:13.428 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -56814, Progress: 0/200000
+19:51:13.429 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 1, dataItems.peek() = -56814, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:14.430 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -55804, Progress: 0/200000
+19:51:14.432 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 29, dataItems.peek() = -55845, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:15.430 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -54804, Progress: 0/200000
+19:51:15.431 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 47, dataItems.peek() = -54804, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:16.432 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -53805, Progress: 0/200000
+19:51:16.433 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 65, dataItems.peek() = -53835, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:17.434 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -52799, Progress: 0/200000
+19:51:17.435 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 92, dataItems.peek() = -52865, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:18.434 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -51863, Progress: 0/200000
+19:51:18.435 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 150, dataItems.peek() = -51975, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:19.435 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -50793, Progress: 0/200000
+19:51:19.437 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 176, dataItems.peek() = -50925, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:20.436 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -49799, Progress: 0/200000
+19:51:20.437 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 139, dataItems.peek() = -49969, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:21.438 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -48802, Progress: 0/200000
+19:51:21.439 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 214, dataItems.peek() = -48985, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:22.438 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -47800, Progress: 0/200000
+19:51:22.439 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 88, dataItems.peek() = -47893, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:23.440 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -46792, Progress: 0/200000
+19:51:23.440 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 122, dataItems.peek() = -46925, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:24.440 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -45790, Progress: 0/200000
+19:51:24.442 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 154, dataItems.peek() = -45881, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:25.442 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -44789, Progress: 0/200000
+19:51:25.442 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 1, dataItems.peek() = -44789, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:26.442 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -43788, Progress: 0/200000
+19:51:26.442 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 18, dataItems.peek() = -43828, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:27.442 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -42794, Progress: 0/200000
+19:51:27.443 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 54, dataItems.peek() = -42855, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:28.443 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -41797, Progress: 0/200000
+19:51:28.444 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 90, dataItems.peek() = -41881, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:29.444 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -40788, Progress: 0/200000
+19:51:29.446 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 121, dataItems.peek() = -40912, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:30.444 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -39794, Progress: 0/200000
+19:51:30.444 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 144, dataItems.peek() = -39867, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:31.444 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -38792, Progress: 0/200000
+19:51:31.444 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 161, dataItems.peek() = -38897, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:32.446 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -37786, Progress: 0/200000
+19:51:32.447 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 11, dataItems.peek() = -37802, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:33.448 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -36789, Progress: 0/200000
+19:51:33.449 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 38, dataItems.peek() = -36825, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:34.448 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -35785, Progress: 0/200000
+19:51:34.450 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 73, dataItems.peek() = -35793, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:35.449 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -34782, Progress: 0/200000
+19:51:35.449 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 108, dataItems.peek() = -34894, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:36.449 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -33780, Progress: 0/200000
+19:51:36.450 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 130, dataItems.peek() = -33853, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:37.450 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -32781, Progress: 0/200000
+19:51:37.450 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 172, dataItems.peek() = -32883, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:38.450 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -31786, Progress: 0/200000
+19:51:38.450 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 3, dataItems.peek() = -31792, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:39.450 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -30783, Progress: 0/200000
+19:51:39.452 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 32, dataItems.peek() = -30815, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:40.451 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -29782, Progress: 0/200000
+19:51:40.451 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 70, dataItems.peek() = -29854, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:41.452 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -28784, Progress: 0/200000
+19:51:41.452 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 105, dataItems.peek() = -28885, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:42.452 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -27778, Progress: 0/200000
+19:51:42.452 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 115, dataItems.peek() = -27839, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:43.452 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -26773, Progress: 0/200000
+19:51:43.452 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 159, dataItems.peek() = -26869, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:44.453 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -25780, Progress: 0/200000
+19:51:44.456 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 2, dataItems.peek() = -25780, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:45.454 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -24780, Progress: 0/200000
+19:51:45.454 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 21, dataItems.peek() = -24802, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:46.456 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -23773, Progress: 0/200000
+19:51:46.456 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 60, dataItems.peek() = -23840, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:47.457 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -22781, Progress: 0/200000
+19:51:47.457 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 82, dataItems.peek() = -22795, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:48.457 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -21767, Progress: 0/200000
+19:51:48.457 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 121, dataItems.peek() = -21896, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:49.458 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -20780, Progress: 0/200000
+19:51:49.460 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 149, dataItems.peek() = -20928, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:50.459 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -19774, Progress: 0/200000
+19:51:50.459 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 184, dataItems.peek() = -19961, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:51.459 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -18770, Progress: 0/200000
+19:51:51.459 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 15, dataItems.peek() = -18790, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:52.462 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -17770, Progress: 0/200000
+19:51:52.462 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 51, dataItems.peek() = -17824, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:53.463 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -16767, Progress: 0/200000
+19:51:53.464 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 79, dataItems.peek() = -16781, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:54.465 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -15766, Progress: 0/200000
+19:51:54.467 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 104, dataItems.peek() = -15883, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:55.467 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -14764, Progress: 0/200000
+19:51:55.468 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 145, dataItems.peek() = -14841, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:56.467 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -13763, Progress: 0/200000
+19:51:56.468 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 167, dataItems.peek() = -13871, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:57.467 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -12768, Progress: 0/200000
+19:51:57.468 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 9, dataItems.peek() = -12795, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:58.470 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -11766, Progress: 0/200000
+19:51:58.471 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 44, dataItems.peek() = -11812, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:51:59.472 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -10771, Progress: 0/200000
+19:51:59.474 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 67, dataItems.peek() = -10767, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:52:00.473 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -9765, Progress: 0/200000
+19:52:00.473 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 27, dataItems.peek() = -9790, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:52:01.474 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -8756, Progress: 0/200000
+19:52:01.475 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 92, dataItems.peek() = -8907, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:52:02.475 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -7761, Progress: 0/200000
+19:52:02.475 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 113, dataItems.peek() = -7928, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:52:03.475 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -6759, Progress: 0/200000
+19:52:03.475 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 1, dataItems.peek() = -6759, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:52:04.475 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -5760, Progress: 0/200000
+19:52:04.477 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 217, dataItems.peek() = -5990, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:52:05.475 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -4762, Progress: 0/200000
+19:52:05.476 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 1, dataItems.peek() = -4762, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:52:06.475 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -3752, Progress: 0/200000
+19:52:06.476 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 71, dataItems.peek() = -3783, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:52:07.476 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -2754, Progress: 0/200000
+19:52:07.476 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 86, dataItems.peek() = -2813, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:52:08.476 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -1763, Progress: 0/200000
+19:52:08.477 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 138, dataItems.peek() = -1843, awaitCountConsumer = AwaitCountConsumer{0/200000}
+19:52:09.476 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id -758, Progress: 0/200000
+19:52:09.478 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 142, dataItems.peek() = -873, awaitCountConsumer = AwaitCountConsumer{0/200000}
+2019-10-05T19:52:10.438+0000: 157.653: [GC (Allocation Failure) 2019-10-05T19:52:10.438+0000: 157.653: [DefNew: 409600K->51200K(460800K), 0.3693007 secs] 425153K->310341K(1484800K), 0.3694845 secs] [Times: user=0.07 sys=0.29, real=0.37 secs] 
+19:52:10.814 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 1000
+19:52:10.817 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 663, Progress: 689/200000
+19:52:10.817 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 394, dataItems.peek() = 277, awaitCountConsumer = AwaitCountConsumer{296/200000}
+19:52:10.833 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 2000
+19:52:11.104 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 3000
+19:52:11.404 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 4000
+19:52:11.704 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 5000
+19:52:11.822 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 5249, Progress: 5274/200000
+19:52:11.822 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 1291, dataItems.peek() = 3984, awaitCountConsumer = AwaitCountConsumer{3984/200000}
+19:52:12.004 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 6000
+19:52:12.304 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 7000
+19:52:12.604 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 8000
+19:52:12.822 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 8604, Progress: 8570/200000
+19:52:12.822 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 1289, dataItems.peek() = 7282, awaitCountConsumer = AwaitCountConsumer{7282/200000}
+19:52:12.904 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 9000
+19:52:13.204 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 10000
+19:52:13.504 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 11000
+19:52:13.804 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 12000
+19:52:13.822 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 11956, Progress: 11777/200000
+19:52:13.822 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 1780, dataItems.peek() = 9998, awaitCountConsumer = AwaitCountConsumer{9998/200000}
+19:52:14.104 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 13000
+19:52:14.404 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 14000
+19:52:14.704 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 15000
+19:52:14.822 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 15238, Progress: 15077/200000
+19:52:14.822 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 1201, dataItems.peek() = 13878, awaitCountConsumer = AwaitCountConsumer{13877/200000}
+19:52:15.004 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 16000
+19:52:15.304 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 17000
+19:52:15.604 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 18000
+19:52:15.822 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 18274, Progress: 18423/200000
+19:52:15.822 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 1054, dataItems.peek() = 17370, awaitCountConsumer = AwaitCountConsumer{17370/200000}
+19:52:15.904 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 19000
+19:52:16.204 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 20000
+19:52:16.504 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 21000
+19:52:16.804 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 22000
+19:52:16.822 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 21919, Progress: 21945/200000
+19:52:16.823 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 1084, dataItems.peek() = 20862, awaitCountConsumer = AwaitCountConsumer{20862/200000}
+19:52:17.104 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 23000
+19:52:17.404 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 24000
+19:52:17.704 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 25000
+19:52:17.822 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 25294, Progress: 25301/200000
+19:52:17.822 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 948, dataItems.peek() = 24354, awaitCountConsumer = AwaitCountConsumer{24354/200000}
+19:52:18.004 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 26000
+19:52:18.304 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 27000
+19:52:18.604 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 28000
+19:52:18.823 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 28564, Progress: 28551/200000
+19:52:18.824 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 2064, dataItems.peek() = 26488, awaitCountConsumer = AwaitCountConsumer{26488/200000}
+19:52:18.904 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 29000
+19:52:19.204 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 30000
+19:52:19.504 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 31000
+19:52:19.804 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 32000
+19:52:19.823 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 31922, Progress: 31960/200000
+19:52:19.824 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 1399, dataItems.peek() = 30562, awaitCountConsumer = AwaitCountConsumer{30562/200000}
+19:52:20.104 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 33000
+19:52:20.404 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 34000
+19:52:20.704 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 35000
+19:52:20.823 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 35330, Progress: 35304/200000
+19:52:20.824 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 2415, dataItems.peek() = 32890, awaitCountConsumer = AwaitCountConsumer{32890/200000}
+19:52:21.004 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 36000
+19:52:21.304 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 37000
+19:52:21.604 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 38000
+19:52:21.824 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 38627, Progress: 38635/200000
+19:52:21.824 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 1672, dataItems.peek() = 36964, awaitCountConsumer = AwaitCountConsumer{36964/200000}
+19:52:21.904 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 39000
+19:52:22.204 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 40000
+19:52:22.504 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 41000
+19:52:22.804 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 42000
+19:52:22.825 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 41985, Progress: 41991/200000
+19:52:22.825 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 1924, dataItems.peek() = 40068, awaitCountConsumer = AwaitCountConsumer{40068/200000}
+19:52:23.104 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 43000
+19:52:23.404 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 44000
+19:52:23.704 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 45000
+19:52:23.825 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 45344, Progress: 45318/200000
+19:52:23.826 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 1759, dataItems.peek() = 43560, awaitCountConsumer = AwaitCountConsumer{43560/200000}
+19:52:24.004 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 46000
+19:52:24.304 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 47000
+19:52:24.604 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 48000
+19:52:24.825 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 48656, Progress: 48663/200000
+19:52:24.826 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 2194, dataItems.peek() = 46470, awaitCountConsumer = AwaitCountConsumer{46470/200000}
+19:52:24.904 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 49000
+19:52:25.204 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 50000
+19:52:25.504 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 51000
+19:52:25.804 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 52000
+19:52:25.826 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 52011, Progress: 51992/200000
+19:52:25.826 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 2225, dataItems.peek() = 49768, awaitCountConsumer = AwaitCountConsumer{49768/200000}
+19:52:26.104 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 53000
+19:52:26.405 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 54000
+19:52:26.704 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 55000
+19:52:26.826 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 55342, Progress: 55324/200000
+19:52:26.827 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 2259, dataItems.peek() = 53066, awaitCountConsumer = AwaitCountConsumer{53066/200000}
+19:52:27.004 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 56000
+19:52:27.304 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 57000
+19:52:27.604 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 58000
+19:52:27.826 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 58674, Progress: 58660/200000
+19:52:27.827 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 2297, dataItems.peek() = 56364, awaitCountConsumer = AwaitCountConsumer{56364/200000}
+19:52:27.904 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 59000
+19:52:28.204 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 60000
+19:52:28.504 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 61000
+19:52:28.804 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 62000
+19:52:28.827 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 61944, Progress: 61997/200000
+19:52:28.827 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 2336, dataItems.peek() = 59662, awaitCountConsumer = AwaitCountConsumer{59662/200000}
+19:52:29.104 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 63000
+19:52:29.404 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 64000
+19:52:29.704 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 65000
+19:52:29.827 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 65348, Progress: 65336/200000
+19:52:29.827 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 2377, dataItems.peek() = 62960, awaitCountConsumer = AwaitCountConsumer{62960/200000}
+19:52:30.004 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 66000
+19:52:30.304 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 67000
+19:52:30.604 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 68000
+19:52:30.827 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 68675, Progress: 68668/200000
+19:52:30.827 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 2217, dataItems.peek() = 66452, awaitCountConsumer = AwaitCountConsumer{66452/200000}
+19:52:30.904 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 69000
+19:52:31.204 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 70000
+19:52:31.504 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 71000
+19:52:31.804 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 72000
+19:52:31.827 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 72020, Progress: 71999/200000
+19:52:31.828 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 2056, dataItems.peek() = 69944, awaitCountConsumer = AwaitCountConsumer{69944/200000}
+19:52:32.104 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 73000
+19:52:32.404 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 74000
+19:52:32.704 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 75000
+19:52:32.828 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 75322, Progress: 75315/200000
+19:52:32.828 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 1686, dataItems.peek() = 73630, awaitCountConsumer = AwaitCountConsumer{73630/200000}
+19:52:33.004 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 76000
+19:52:33.304 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 77000
+19:52:33.604 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 78000
+19:52:33.828 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 78673, Progress: 78667/200000
+19:52:33.829 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 2128, dataItems.peek() = 76540, awaitCountConsumer = AwaitCountConsumer{76540/200000}
+19:52:33.904 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 79000
+19:52:34.204 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 80000
+19:52:34.504 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 81000
+19:52:34.804 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 82000
+19:52:34.829 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 82018, Progress: 82004/200000
+19:52:34.829 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 1391, dataItems.peek() = 80614, awaitCountConsumer = AwaitCountConsumer{80614/200000}
+19:52:35.104 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 83000
+19:52:35.404 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 84000
+19:52:35.704 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 85000
+19:52:35.829 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 85348, Progress: 85336/200000
+19:52:35.829 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 2007, dataItems.peek() = 83330, awaitCountConsumer = AwaitCountConsumer{83330/200000}
+19:52:36.005 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 86000
+19:52:36.304 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 87000
+19:52:36.604 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 88000
+19:52:36.829 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 88661, Progress: 88662/200000
+19:52:36.830 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 2229, dataItems.peek() = 86434, awaitCountConsumer = AwaitCountConsumer{86434/200000}
+19:52:36.904 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 89000
+19:52:37.204 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 90000
+19:52:37.504 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 91000
+19:52:37.804 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 92000
+19:52:37.830 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 91996, Progress: 92002/200000
+19:52:37.832 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 2659, dataItems.peek() = 89344, awaitCountConsumer = AwaitCountConsumer{89344/200000}
+19:52:38.104 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 93000
+19:52:38.404 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 94000
+19:52:38.704 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 95000
+19:52:38.830 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 95300, Progress: 95333/200000
+19:52:38.831 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 3080, dataItems.peek() = 92254, awaitCountConsumer = AwaitCountConsumer{92254/200000}
+19:52:39.004 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 96000
+19:52:39.304 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 97000
+19:52:39.604 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 98000
+19:52:39.830 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 98667, Progress: 98677/200000
+19:52:39.830 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 3708, dataItems.peek() = 94970, awaitCountConsumer = AwaitCountConsumer{94970/200000}
+19:52:39.904 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 99000
+19:52:40.204 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 100000
+19:52:40.504 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 101000
+19:52:40.804 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 102000
+19:52:40.830 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 101997, Progress: 102008/200000
+19:52:40.830 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 3547, dataItems.peek() = 98462, awaitCountConsumer = AwaitCountConsumer{98462/200000}
+19:52:41.104 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 103000
+19:52:41.404 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 104000
+19:52:41.704 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 105000
+19:52:41.830 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 105359, Progress: 105347/200000
+19:52:41.831 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 3976, dataItems.peek() = 101372, awaitCountConsumer = AwaitCountConsumer{101372/200000}
+19:52:42.004 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 106000
+19:52:42.304 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 107000
+19:52:42.604 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 108000
+19:52:42.830 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 108665, Progress: 108680/200000
+19:52:42.831 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 3623, dataItems.peek() = 105058, awaitCountConsumer = AwaitCountConsumer{105058/200000}
+19:52:42.904 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 109000
+19:52:43.204 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 110000
+19:52:43.504 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 111000
+19:52:43.804 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 112000
+19:52:43.830 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 111994, Progress: 112004/200000
+19:52:43.831 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 3455, dataItems.peek() = 108550, awaitCountConsumer = AwaitCountConsumer{108550/200000}
+19:52:44.104 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 113000
+19:52:44.404 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 114000
+19:52:44.704 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 115000
+19:52:44.831 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 115366, Progress: 115342/200000
+19:52:44.831 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 3301, dataItems.peek() = 112042, awaitCountConsumer = AwaitCountConsumer{112042/200000}
+19:52:45.004 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 116000
+19:52:45.304 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 117000
+19:52:45.604 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 118000
+19:52:45.831 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 118652, Progress: 118678/200000
+19:52:45.831 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 3533, dataItems.peek() = 115146, awaitCountConsumer = AwaitCountConsumer{115146/200000}
+19:52:45.904 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 119000
+19:52:46.204 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 120000
+19:52:46.504 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 121000
+19:52:46.804 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 122000
+19:52:46.831 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 122022, Progress: 122017/200000
+19:52:46.832 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 3380, dataItems.peek() = 118638, awaitCountConsumer = AwaitCountConsumer{118638/200000}
+19:52:47.104 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 123000
+19:52:47.404 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 124000
+19:52:47.704 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 125000
+19:52:47.832 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 125344, Progress: 125349/200000
+19:52:47.832 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 4578, dataItems.peek() = 120772, awaitCountConsumer = AwaitCountConsumer{120772/200000}
+19:52:48.004 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 126000
+19:52:48.304 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 127000
+19:52:48.605 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 128000
+19:52:48.832 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 128676, Progress: 128679/200000
+19:52:48.832 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 4028, dataItems.peek() = 124652, awaitCountConsumer = AwaitCountConsumer{124652/200000}
+19:52:48.904 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 129000
+19:52:49.204 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 130000
+19:52:49.504 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 131000
+19:52:49.804 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 132000
+19:52:49.832 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 132026, Progress: 132011/200000
+19:52:49.832 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 2510, dataItems.peek() = 129502, awaitCountConsumer = AwaitCountConsumer{129502/200000}
+19:52:50.104 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 133000
+19:52:50.404 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 134000
+19:52:50.704 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 135000
+19:52:50.832 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 135341, Progress: 135353/200000
+19:52:50.833 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 2554, dataItems.peek() = 132800, awaitCountConsumer = AwaitCountConsumer{132800/200000}
+19:52:51.004 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 136000
+19:52:51.304 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 137000
+19:52:51.604 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 138000
+19:52:51.832 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 138687, Progress: 138685/200000
+19:52:51.833 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 2394, dataItems.peek() = 136292, awaitCountConsumer = AwaitCountConsumer{136292/200000}
+19:52:51.904 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 139000
+19:52:52.204 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 140000
+19:52:52.504 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 141000
+19:52:52.804 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 142000
+19:52:52.832 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 142000, Progress: 142016/200000
+19:52:52.833 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 2427, dataItems.peek() = 139590, awaitCountConsumer = AwaitCountConsumer{139590/200000}
+19:52:53.104 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 143000
+19:52:53.404 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 144000
+19:52:53.704 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 145000
+19:52:53.833 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 145362, Progress: 145350/200000
+19:52:53.833 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 2657, dataItems.peek() = 142694, awaitCountConsumer = AwaitCountConsumer{142694/200000}
+19:52:54.004 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 146000
+19:52:54.304 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 147000
+19:52:54.604 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 148000
+19:52:54.833 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 148680, Progress: 148684/200000
+19:52:54.834 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 2693, dataItems.peek() = 145992, awaitCountConsumer = AwaitCountConsumer{145992/200000}
+19:52:54.904 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 149000
+19:52:55.204 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 150000
+19:52:55.504 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 151000
+19:52:55.804 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 152000
+19:52:55.834 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 152034, Progress: 152021/200000
+19:52:55.835 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 2150, dataItems.peek() = 149872, awaitCountConsumer = AwaitCountConsumer{149872/200000}
+19:52:56.104 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 153000
+19:52:56.404 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 154000
+19:52:56.704 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 155000
+19:52:56.834 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 155341, Progress: 155346/200000
+19:52:56.835 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 1983, dataItems.peek() = 153364, awaitCountConsumer = AwaitCountConsumer{153364/200000}
+19:52:57.004 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 156000
+19:52:57.304 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 157000
+19:52:57.604 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 158000
+19:52:57.835 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 158665, Progress: 158677/200000
+19:52:57.837 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 1822, dataItems.peek() = 156856, awaitCountConsumer = AwaitCountConsumer{156856/200000}
+19:52:57.904 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 159000
+19:52:58.204 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 160000
+19:52:58.504 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 161000
+19:52:58.804 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 162000
+19:52:58.835 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 162033, Progress: 162026/200000
+19:52:58.837 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 3231, dataItems.peek() = 158796, awaitCountConsumer = AwaitCountConsumer{158796/200000}
+19:52:59.104 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 163000
+19:52:59.404 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 164000
+19:52:59.704 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 165000
+19:52:59.836 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 165350, Progress: 165357/200000
+19:52:59.836 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 2682, dataItems.peek() = 162676, awaitCountConsumer = AwaitCountConsumer{162676/200000}
+19:53:00.004 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 166000
+19:53:00.304 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 167000
+19:53:00.604 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 168000
+19:53:00.836 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 168655, Progress: 168633/200000
+19:53:00.836 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 2660, dataItems.peek() = 165974, awaitCountConsumer = AwaitCountConsumer{165974/200000}
+19:53:00.904 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 169000
+19:53:01.204 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 170000
+19:53:01.504 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 171000
+19:53:01.804 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 172000
+19:53:01.836 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 172008, Progress: 172012/200000
+19:53:01.836 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 3905, dataItems.peek() = 168108, awaitCountConsumer = AwaitCountConsumer{168108/200000}
+19:53:02.104 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 173000
+19:53:02.404 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 174000
+19:53:02.704 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 175000
+19:53:02.837 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 175350, Progress: 175334/200000
+19:53:02.839 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 2959, dataItems.peek() = 172376, awaitCountConsumer = AwaitCountConsumer{172376/200000}
+19:53:03.004 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 176000
+19:53:03.304 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 177000
+19:53:03.604 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 178000
+19:53:03.837 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 178662, Progress: 178694/200000
+19:53:03.837 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 2633, dataItems.peek() = 176062, awaitCountConsumer = AwaitCountConsumer{176062/200000}
+19:53:03.904 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 179000
+19:53:04.204 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 180000
+19:53:04.504 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 181000
+19:53:04.804 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 182000
+19:53:04.838 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 182021, Progress: 182025/200000
+19:53:04.838 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 3248, dataItems.peek() = 178778, awaitCountConsumer = AwaitCountConsumer{178778/200000}
+19:53:05.104 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 183000
+19:53:05.404 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 184000
+19:53:05.704 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 185000
+19:53:05.838 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 185375, Progress: 185360/200000
+19:53:05.839 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 3091, dataItems.peek() = 182270, awaitCountConsumer = AwaitCountConsumer{182270/200000}
+19:53:06.004 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 186000
+19:53:06.304 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 187000
+19:53:06.604 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 188000
+19:53:06.838 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 188715, Progress: 188701/200000
+19:53:06.839 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 2746, dataItems.peek() = 185956, awaitCountConsumer = AwaitCountConsumer{185956/200000}
+19:53:06.904 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 189000
+19:53:07.204 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 190000
+19:53:07.504 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 191000
+19:53:07.804 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 192000
+19:53:07.838 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 192039, Progress: 192022/200000
+19:53:07.840 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 2769, dataItems.peek() = 189254, awaitCountConsumer = AwaitCountConsumer{189254/200000}
+19:53:08.104 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 193000
+19:53:08.404 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 194000
+19:53:08.704 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 195000
+19:53:08.839 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 195377, Progress: 195355/200000
+19:53:08.839 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 1834, dataItems.peek() = 193522, awaitCountConsumer = AwaitCountConsumer{193522/200000}
+19:53:09.004 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 196000
+19:53:09.304 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 197000
+19:53:09.604 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 198000
+19:53:09.839 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 198702, Progress: 198704/200000
+19:53:09.839 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 2273, dataItems.peek() = 196432, awaitCountConsumer = AwaitCountConsumer{196432/200000}
+19:53:09.904 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 199000
+19:53:10.204 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 200000
+19:53:10.504 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 201000
+19:53:10.804 [Thread-1] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Sending: 202000
+19:53:10.843 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Got id 201991, Progress: 200000/200000
+19:53:10.845 [Server] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - NotificationAwaitTimes: dataItems.size() = 1310, dataItems.peek() = 200700, awaitCountConsumer = AwaitCountConsumer{200000/200000}
+19:53:11.207 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 100
+19:53:11.209 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 99
+19:53:11.209 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 98
+19:53:11.209 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 97
+19:53:11.210 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 96
+19:53:11.213 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 95
+19:53:11.213 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 94
+19:53:11.214 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 93
+19:53:11.215 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 92
+19:53:11.215 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 91
+19:53:11.215 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 90
+19:53:11.216 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 89
+19:53:11.216 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 88
+19:53:11.216 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 87
+19:53:11.217 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 86
+19:53:11.218 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 85
+19:53:11.218 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 84
+19:53:11.218 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 83
+19:53:11.218 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 82
+19:53:11.219 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 81
+19:53:11.219 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 80
+19:53:11.219 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 79
+19:53:11.220 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 78
+19:53:11.220 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 77
+19:53:11.221 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 76
+19:53:11.221 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 75
+19:53:11.221 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 74
+19:53:11.222 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 73
+19:53:11.222 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 72
+19:53:11.222 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 71
+19:53:11.223 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 70
+19:53:11.223 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 69
+19:53:11.223 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 68
+19:53:11.224 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 67
+19:53:11.225 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 66
+19:53:11.225 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 65
+19:53:11.226 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 64
+19:53:11.226 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 63
+19:53:11.227 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 62
+19:53:11.227 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 61
+19:53:11.227 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 60
+19:53:11.227 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 59
+19:53:11.227 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 58
+19:53:11.227 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 57
+19:53:11.229 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 56
+19:53:11.229 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 55
+19:53:11.229 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 54
+19:53:11.229 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 53
+19:53:11.229 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 52
+19:53:11.230 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 51
+19:53:11.231 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 50
+19:53:11.231 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 49
+19:53:11.231 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 48
+19:53:11.232 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 47
+19:53:11.232 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 46
+19:53:11.232 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 45
+19:53:11.233 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 44
+19:53:11.233 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 43
+19:53:11.233 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 42
+19:53:11.234 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 41
+19:53:11.234 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 40
+19:53:11.235 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 39
+19:53:11.235 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 38
+19:53:11.235 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 37
+19:53:11.235 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 36
+19:53:11.235 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 35
+19:53:11.236 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 34
+19:53:11.236 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 33
+19:53:11.236 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 32
+19:53:11.236 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 31
+19:53:11.236 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 30
+19:53:11.237 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 29
+19:53:11.237 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 28
+19:53:11.238 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 27
+19:53:11.238 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 26
+19:53:11.238 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 25
+19:53:11.238 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 24
+19:53:11.238 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 23
+19:53:11.240 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 22
+19:53:11.240 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 21
+19:53:11.240 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 20
+19:53:11.240 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 19
+19:53:11.240 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 18
+19:53:11.241 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 17
+19:53:11.241 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 16
+19:53:11.241 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 15
+19:53:11.241 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 14
+19:53:11.241 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 13
+19:53:11.242 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 12
+19:53:11.242 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 11
+19:53:11.242 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 10
+19:53:11.243 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 9
+19:53:11.243 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 8
+19:53:11.243 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 7
+19:53:11.244 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 6
+19:53:11.244 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 5
+19:53:11.244 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 4
+19:53:11.244 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 3
+19:53:11.244 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 2
+19:53:11.245 [main] INFO  c.s.f.e.b.BenchStandComponentFactory  - Consumer has been disconnected Connection 1
+19:53:11.416 [main] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - Median: 23970030
+19:53:11.437 [main] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - 75%: 28206145
+19:53:11.445 [main] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - 90%: 34401243
+19:53:11.455 [main] INFO  c.s.f.e.b.WatermarksVsAckerBenchStand  - 99%: 149141470
+Heap
+ def new generation   total 460800K, used 327324K [0x00000000a2400000, 0x00000000c1800000, 0x00000000c1800000)
+  eden space 409600K,  67% used [0x00000000a2400000, 0x00000000b31a7208, 0x00000000bb400000)
+  from space 51200K, 100% used [0x00000000be600000, 0x00000000c1800000, 0x00000000c1800000)
+  to   space 51200K,   0% used [0x00000000bb400000, 0x00000000bb400000, 0x00000000be600000)
+ tenured generation   total 1024000K, used 259141K [0x00000000c1800000, 0x0000000100000000, 0x0000000100000000)
+   the space 1024000K,  25% used [0x00000000c1800000, 0x00000000d1511760, 0x00000000d1511800, 0x0000000100000000)
+ Metaspace       used 22712K, capacity 23166K, committed 23296K, reserved 1069056K
+  class space    used 2888K, capacity 3009K, committed 3072K, reserved 1048576K

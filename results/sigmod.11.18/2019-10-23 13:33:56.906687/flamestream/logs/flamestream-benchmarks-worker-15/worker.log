@@ -1,0 +1,781 @@
+13:34:11,653 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+13:34:11,653 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+13:34:11,654 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [jar:file:/home/ubuntu/flamestream/lib/flamestream-runtime-1.0-SNAPSHOT.jar!/logback.xml]
+13:34:11,654 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs multiple times on the classpath.
+13:34:11,654 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/home/ubuntu/flamestream/flamestream-runtime-1.0-SNAPSHOT.jar!/logback.xml]
+13:34:11,654 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/home/ubuntu/flamestream/lib/flamestream-runtime-1.0-SNAPSHOT.jar!/logback.xml]
+13:34:11,670 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@4678c730 - URL [jar:file:/home/ubuntu/flamestream/lib/flamestream-runtime-1.0-SNAPSHOT.jar!/logback.xml] is not of type file
+13:34:11,734 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+13:34:11,734 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+13:34:11,755 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+13:34:11,770 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+13:34:11,861 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+13:34:11,869 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [FILE]
+13:34:11,912 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1734853116 - No compression will be used
+13:34:11,913 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1734853116 - Will use the pattern /tmp/application_%d{yyyy-MM-dd}.%i.log for the active file
+13:34:11,927 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@29ee9faa - The date pattern is 'yyyy-MM-dd' from file name pattern '/tmp/application_%d{yyyy-MM-dd}.%i.log'.
+13:34:11,927 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@29ee9faa - Roll-over at midnight.
+13:34:11,934 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@29ee9faa - Setting initial period to Wed Oct 23 13:33:44 UTC 2019
+13:34:11,935 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@29ee9faa - SizeAndTimeBasedFNATP is deprecated. Use SizeAndTimeBasedRollingPolicy instead
+13:34:11,935 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@29ee9faa - For more information see http://logback.qos.ch/manual/appenders.html#SizeAndTimeBasedRollingPolicy
+13:34:11,940 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+13:34:11,947 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - Active log file name: /tmp/application.log
+13:34:11,947 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - File property is set to [/tmp/application.log]
+13:34:11,948 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to INFO
+13:34:11,948 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+13:34:11,949 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [FILE] to Logger[ROOT]
+13:34:11,949 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+13:34:11,949 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@c038203 - Registering current configuration as safe fallback point
+
+13:34:11.953 [main] INFO  c.s.f.r.WorkerApplication  - Starting worker with workerConfig 'WorkerConfig{id='flamestream-benchmarks-worker-15', localAddress=flamestream-benchmarks-worker-15/10.0.0.19:5412, zkString='flamestream-benchmarks-manager:12181', snapshotPath='/home/ubuntu/flamestream/data', guarantees=AT_MOST_ONCE}'
+13:34:13.383 [worker-akka.actor.default-dispatcher-6] INFO  a.e.s.Slf4jLogger  - Slf4jLogger started
+2019-10-23T13:34:13.536+0000: 2.230: [Full GC (Metadata GC Threshold) 2019-10-23T13:34:13.536+0000: 2.230: [Tenured: 0K->13625K(1024000K), 0.0519639 secs] 139464K->13625K(1484800K), [Metaspace: 20226K->20226K(1067008K)], 0.0520511 secs] [Times: user=0.04 sys=0.01, real=0.05 secs] 
+13:34:13.689 [worker-akka.actor.default-dispatcher-6] WARN  a.r.RemoteActorRefProvider akka.remote.RemoteActorRefProvider - Using the 'remote' ActorRefProvider directly, which is a low-level layer. For most use cases, the 'cluster' abstraction on top of remoting is more suitable instead.
+13:34:13.693 [worker-akka.actor.default-dispatcher-6] WARN  a.r.RemoteActorRefProvider akka.remote.RemoteActorRefProvider - Akka Cluster not in use - Using Akka Cluster is recommended if you need remote watch and deploy.
+13:34:13.814 [worker-akka.actor.default-dispatcher-6] INFO  a.r.a.a.ArteryAeronUdpTransport(akka://worker) akka.remote.artery.aeron.ArteryAeronUdpTransport(akka://worker) - Started embedded media driver in directory [/dev/shm/aeron-flamestream-benchmarks-worker-15]
+13:34:13.848 [worker-akka.actor.default-dispatcher-6] WARN  a.r.a.a.ArteryAeronUdpTransport(akka://worker) akka.remote.artery.aeron.ArteryAeronUdpTransport(akka://worker) - Aeron CnC version mismatch: compiled version = 15, file version = 16
+13:34:14.121 [worker-akka.actor.default-dispatcher-6] INFO  a.r.a.a.ArteryAeronUdpTransport(akka://worker) akka.remote.artery.aeron.ArteryAeronUdpTransport(akka://worker) - Remoting started with transport [Artery aeron-udp]; listening on address [akka://worker@flamestream-benchmarks-worker-15:5412] and bound to [akka://worker@0.0.0.0:5412] with UID [4794683717959247892]
+13:34:14.665 [worker-akka.actor.default-dispatcher-6] WARN  a.s.Serialization(akka://worker) akka.serialization.Serialization(akka://worker) - Using serializer [com.romix.akka.serialization.kryo.KryoSerializer] for message [akka.actor.ActorSelectionMessage]. Note that this serializer is not implemented by Akka. It's not recommended to replace serializers for messages provided by Akka.
+13:34:14.666 [worker-akka.actor.default-dispatcher-6] WARN  a.s.Serialization(akka://worker) akka.serialization.Serialization(akka://worker) - Using serializer [com.romix.akka.serialization.kryo.KryoSerializer] for message [akka.actor.ActorIdentity]. Note that this serializer is not implemented by Akka. It's not recommended to replace serializers for messages provided by Akka.
+13:34:14.725 [worker-akka.actor.default-dispatcher-9] INFO  a.a.RepointableActorRef akka://worker/user/watcher - Starting...
+13:34:14.842 [worker-akka.actor.default-dispatcher-6] INFO  o.a.c.u.Compatibility  - Running in ZooKeeper 3.4.x compatibility mode
+13:34:14.869 [worker-akka.actor.default-dispatcher-6] INFO  o.a.c.f.i.CuratorFrameworkImpl  - Starting
+13:34:14.880 [worker-akka.actor.default-dispatcher-6] INFO  o.a.z.ZooKeeper  - Client environment:zookeeper.version=3.4.14-4c25d480e66aadd371de8bd2fd8da255ac140bcf, built on 03/06/2019 16:18 GMT
+13:34:14.880 [worker-akka.actor.default-dispatcher-6] INFO  o.a.z.ZooKeeper  - Client environment:host.name=flamestream-benchmarks-worker-15
+13:34:14.881 [worker-akka.actor.default-dispatcher-6] INFO  o.a.z.ZooKeeper  - Client environment:java.version=1.8.0_222
+13:34:14.881 [worker-akka.actor.default-dispatcher-6] INFO  o.a.z.ZooKeeper  - Client environment:java.vendor=Private Build
+13:34:14.882 [worker-akka.actor.default-dispatcher-6] INFO  o.a.z.ZooKeeper  - Client environment:java.home=/usr/lib/jvm/java-8-openjdk-amd64/jre
+13:34:14.883 [worker-akka.actor.default-dispatcher-6] INFO  o.a.z.ZooKeeper  - Client environment:java.class.path=lib/curator-framework-4.0.1.jar:lib/commons-csv-1.4.jar:lib/aeron-client-1.21.2.jar:lib/scala-library-2.12.9.jar:lib/asm-5.0.4.jar:lib/agrona-1.0.1.jar:lib/curator-recipes-4.0.1.jar:lib/akka-testkit_2.12-2.6.0-M6.jar:lib/flamestream-runtime-1.0-SNAPSHOT.jar:lib/slf4j-simple-2.0.0-alpha1.jar:lib/jsr305-3.0.2.jar:lib/trove4j-3.0.3.jar:lib/flamestream-core-1.0-SNAPSHOT.jar:lib/commons-io-2.4.jar:lib/minlog-1.3.0.jar:lib/kryonet-2.21.jar:lib/commons-1.4.9.jar:lib/jline-0.9.94.jar:lib/akka-remote_2.12-2.6.0-M6.jar:lib/leveldbjni-all-1.8.jar:lib/lz4-1.3.0.jar:lib/slf4j-api-1.7.24.jar:lib/scala-parser-combinators_2.12-1.1.2.jar:lib/flamestream-core-1.0-SNAPSHOT-tests.jar:lib/logback-core-1.2.3.jar:lib/netty-3.10.6.Final.jar:lib/protobuf-java-3.9.0.jar:lib/minlog-1.2.jar:lib/leveldb-api-0.7.jar:lib/jool-0.9.12.jar:lib/commons-cli-1.4.jar:lib/jblas-1.2.4.jar:lib/reflectasm-1.11.3.jar:lib/reflectasm-1.07-shaded.jar:lib/audience-annotations-0.5.0.jar:lib/jackson-annotations-2.9.6.jar:lib/commons-lang-2.6.jar:lib/ssl-config-core_2.12-0.3.8.jar:lib/annotations-13.0.jar:lib/logback-classic-1.2.3.jar:lib/guava-21.0.jar:lib/reactive-streams-1.0.2.jar:lib/spotbugs-annotations-3.1.9.jar:lib/leveldb-0.7.jar:lib/commons-pool2-2.4.2.jar:lib/rocksdbjni-5.5.1.jar:lib/jackson-core-2.9.9.jar:lib/jackson-databind-2.9.9.2.jar:lib/akka-protobuf-v3_2.12-2.6.0-M6.jar:lib/jackson-annotations-2.9.0.jar:lib/flamestream-examples-1.0-SNAPSHOT.jar:lib/objenesis-2.1.jar:lib/akka-kryo-serialization_2.12-0.5.2.jar:lib/scala-java8-compat_2.12-0.8.0.jar:lib/zookeeper-3.4.14.jar:lib/akka-slf4j_2.12-2.6.0-M6.jar:lib/kryo-4.0.0.jar:lib/akka-stream_2.12-2.6.0-M6.jar:lib/aeron-driver-1.21.2.jar:lib/config-1.3.1.jar:lib/annotations-12.0.jar:lib/jedis-2.9.0.jar:lib/jcommander-1.48.jar:lib/testng-6.10.jar:lib/akka-actor_2.12-2.6.0-M6.jar:lib/curator-client-4.0.1.jar:flamestream-runtime-1.0-SNAPSHOT.jar
+13:34:14.883 [worker-akka.actor.default-dispatcher-6] INFO  o.a.z.ZooKeeper  - Client environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+13:34:14.883 [worker-akka.actor.default-dispatcher-6] INFO  o.a.z.ZooKeeper  - Client environment:java.io.tmpdir=/tmp
+13:34:14.883 [worker-akka.actor.default-dispatcher-6] INFO  o.a.z.ZooKeeper  - Client environment:java.compiler=<NA>
+13:34:14.884 [worker-akka.actor.default-dispatcher-6] INFO  o.a.z.ZooKeeper  - Client environment:os.name=Linux
+13:34:14.887 [worker-akka.actor.default-dispatcher-6] INFO  o.a.z.ZooKeeper  - Client environment:os.arch=amd64
+13:34:14.887 [worker-akka.actor.default-dispatcher-6] INFO  o.a.z.ZooKeeper  - Client environment:os.version=4.15.0-1040-gcp
+13:34:14.887 [worker-akka.actor.default-dispatcher-6] INFO  o.a.z.ZooKeeper  - Client environment:user.name=ubuntu
+13:34:14.887 [worker-akka.actor.default-dispatcher-6] INFO  o.a.z.ZooKeeper  - Client environment:user.home=/home/ubuntu
+13:34:14.887 [worker-akka.actor.default-dispatcher-6] INFO  o.a.z.ZooKeeper  - Client environment:user.dir=/home/ubuntu/flamestream
+13:34:14.890 [worker-akka.actor.default-dispatcher-6] INFO  o.a.z.ZooKeeper  - Initiating client connection, connectString=flamestream-benchmarks-manager:12181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@3c5e82fa
+13:34:14.919 [worker-akka.actor.default-dispatcher-6-SendThread(flamestream-benchmarks-manager:12181)] INFO  o.a.z.ClientCnxn  - Opening socket connection to server flamestream-benchmarks-manager/10.0.0.2:12181. Will not attempt to authenticate using SASL (unknown error)
+13:34:14.922 [worker-akka.actor.default-dispatcher-6] INFO  o.a.c.f.i.CuratorFrameworkImpl  - Default schema
+13:34:14.924 [worker-akka.actor.default-dispatcher-6-SendThread(flamestream-benchmarks-manager:12181)] INFO  o.a.z.ClientCnxn  - Socket connection established to flamestream-benchmarks-manager/10.0.0.2:12181, initiating session
+13:34:14.932 [worker-akka.actor.default-dispatcher-6-SendThread(flamestream-benchmarks-manager:12181)] INFO  o.a.z.ClientCnxn  - Session establishment complete on server flamestream-benchmarks-manager/10.0.0.2:12181, sessionid = 0x10001b8fcfe000f, negotiated timeout = 60000
+13:34:14.938 [worker-akka.actor.default-dispatcher-6-EventThread] INFO  o.a.c.f.s.ConnectionStateManager  - State change: CONNECTED
+13:34:14.941 [worker-akka.actor.default-dispatcher-9] INFO  a.a.RepointableActorRef akka://worker/user/watcher - Initializing rocksDB backend
+2019-10-23T13:34:15.632+0000: 4.326: [Full GC (Metadata GC Threshold) 2019-10-23T13:34:15.632+0000: 4.326: [Tenured: 13625K->25928K(1024000K), 0.0713215 secs] 161115K->25928K(1484800K), [Metaspace: 33682K->33682K(1079296K)], 0.0714214 secs] [Times: user=0.06 sys=0.00, real=0.07 secs] 
+13:34:15.804 [worker-akka.actor.default-dispatcher-6] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher - Starting...
+13:34:21.239 [Curator-PathChildrenCache-1] WARN  o.a.c.u.ZKPaths  - The version of ZooKeeper being used doesn't support Container nodes. CreateMode.PERSISTENT will be used instead.
+13:34:21.350 [worker-akka.actor.default-dispatcher-10] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/$a - Starting...
+13:34:21.387 [worker-akka.actor.default-dispatcher-6] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/$a - Stopped
+13:34:24.814 [worker-akka.actor.default-dispatcher-12] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph - Starting...
+13:34:37.532 [worker-akka.actor.default-dispatcher-6] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph - Finishing constructor
+13:34:37.534 [worker-akka.actor.default-dispatcher-12] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/negotiator - Starting...
+13:34:37.538 [worker-akka.actor.default-dispatcher-9] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/edge - Starting...
+13:34:37.545 [worker-akka.actor.default-dispatcher-6] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph - Starting FlameNode with config 'ClusterConfig{paths={flamestream-benchmarks-worker-1=akka://worker@flamestream-benchmarks-worker-1:5412/user/watcher/processing-watcher/graph, flamestream-benchmarks-worker-0=akka://worker@flamestream-benchmarks-worker-0:5412/user/watcher/processing-watcher/graph, flamestream-benchmarks-worker-9=akka://worker@flamestream-benchmarks-worker-9:5412/user/watcher/processing-watcher/graph, flamestream-benchmarks-worker-8=akka://worker@flamestream-benchmarks-worker-8:5412/user/watcher/processing-watcher/graph, flamestream-benchmarks-worker-7=akka://worker@flamestream-benchmarks-worker-7:5412/user/watcher/processing-watcher/graph, flamestream-benchmarks-worker-6=akka://worker@flamestream-benchmarks-worker-6:5412/user/watcher/processing-watcher/graph, flamestream-benchmarks-worker-5=akka://worker@flamestream-benchmarks-worker-5:5412/user/watcher/processing-watcher/graph, flamestream-benchmarks-worker-19=akka://worker@flamestream-benchmarks-worker-19:5412/user/watcher/processing-watcher/graph, flamestream-benchmarks-worker-4=akka://worker@flamestream-benchmarks-worker-4:5412/user/watcher/processing-watcher/graph, flamestream-benchmarks-worker-18=akka://worker@flamestream-benchmarks-worker-18:5412/user/watcher/processing-watcher/graph, flamestream-benchmarks-worker-3=akka://worker@flamestream-benchmarks-worker-3:5412/user/watcher/processing-watcher/graph, flamestream-benchmarks-worker-17=akka://worker@flamestream-benchmarks-worker-17:5412/user/watcher/processing-watcher/graph, flamestream-benchmarks-worker-2=akka://worker@flamestream-benchmarks-worker-2:5412/user/watcher/processing-watcher/graph, flamestream-benchmarks-worker-16=akka://worker@flamestream-benchmarks-worker-16:5412/user/watcher/processing-watcher/graph, flamestream-benchmarks-worker-15=akka://worker@flamestream-benchmarks-worker-15:5412/user/watcher/processing-watcher/graph, flamestream-benchmarks-worker-14=akka://worker@flamestream-benchmarks-worker-14:5412/user/watcher/processing-watcher/graph, flamestream-benchmarks-worker-13=akka://worker@flamestream-benchmarks-worker-13:5412/user/watcher/processing-watcher/graph, flamestream-benchmarks-worker-12=akka://worker@flamestream-benchmarks-worker-12:5412/user/watcher/processing-watcher/graph, flamestream-benchmarks-worker-11=akka://worker@flamestream-benchmarks-worker-11:5412/user/watcher/processing-watcher/graph, flamestream-benchmarks-worker-10=akka://worker@flamestream-benchmarks-worker-10:5412/user/watcher/processing-watcher/graph}}'
+13:34:37.576 [worker-akka.actor.default-dispatcher-12] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/negotiator - Requesting ticket for the frontClass FlameSocketGraphDeployerFront@flamestream-benchmarks-worker-15
+13:34:37.614 [worker-akka.actor.default-dispatcher-16] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph - Received last commit 'LastCommit{globalTime=(0000000, min@min)}'
+13:34:37.627 [worker-akka.actor.default-dispatcher-10] INFO  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: connecting to flamestream-benchmarks-manager:5678
+13:34:37.649 [worker-akka.actor.default-dispatcher-16] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/edge/FlameSocketGraphDeployerFront - Starting...
+13:34:37.651 [worker-akka.actor.default-dispatcher-10] INFO  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: connected to flamestream-benchmarks-manager:5678
+13:34:37.653 [worker-akka.actor.default-dispatcher-10] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/edge/FlameSocketGraphDeployerRear - Starting...
+13:34:37.679 [worker-akka.actor.default-dispatcher-10] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/negotiator - Ticket for the frontClass received: FrontTicket{allowedTimestamp=(0000000, FlameSocketGraphDeployerFront@flamestream-benchmarks-worker-15)}
+13:34:37.680 [worker-akka.actor.default-dispatcher-10] INFO  c.s.f.r.e.s.SocketFront  - FlameSocketGraphDeployerFront@flamestream-benchmarks-worker-15: connecting to flamestream-benchmarks-manager:4567
+13:34:37.785 [worker-akka.actor.default-dispatcher-10] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$a - Starting...
+13:34:37.793 [worker-akka.actor.default-dispatcher-10] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$b - Starting...
+13:34:37.796 [worker-akka.actor.default-dispatcher-10] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$c - Starting...
+13:34:37.798 [worker-akka.actor.default-dispatcher-10] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$d - Starting...
+13:34:37.800 [worker-akka.actor.default-dispatcher-10] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$e - Starting...
+13:34:37.802 [worker-akka.actor.default-dispatcher-10] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$f - Starting...
+13:34:37.805 [worker-akka.actor.default-dispatcher-10] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$g - Starting...
+13:34:37.808 [worker-akka.actor.default-dispatcher-10] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$h - Starting...
+13:34:37.811 [worker-akka.actor.default-dispatcher-10] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$i - Starting...
+13:34:37.813 [worker-akka.actor.default-dispatcher-10] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$j - Starting...
+13:34:37.816 [worker-akka.actor.default-dispatcher-10] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$k - Starting...
+13:34:37.818 [worker-akka.actor.default-dispatcher-10] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$l - Starting...
+13:34:37.819 [worker-akka.actor.default-dispatcher-10] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$m - Starting...
+13:34:37.821 [worker-akka.actor.default-dispatcher-10] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$n - Starting...
+13:34:37.822 [worker-akka.actor.default-dispatcher-10] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$o - Starting...
+13:34:37.826 [worker-akka.actor.default-dispatcher-10] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$p - Starting...
+13:34:37.828 [worker-akka.actor.default-dispatcher-10] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$q - Starting...
+13:34:37.830 [worker-akka.actor.default-dispatcher-10] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$r - Starting...
+13:34:37.838 [worker-akka.actor.default-dispatcher-10] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$s - Starting...
+13:34:37.861 [worker-akka.actor.default-dispatcher-10] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$t - Starting...
+13:34:37.864 [worker-akka.actor.default-dispatcher-10] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$u - Starting...
+13:34:37.866 [worker-akka.actor.default-dispatcher-10] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$v - Starting...
+13:34:37.869 [worker-akka.actor.default-dispatcher-10] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$w - Starting...
+13:34:37.871 [worker-akka.actor.default-dispatcher-10] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$x - Starting...
+13:34:37.880 [worker-akka.actor.default-dispatcher-10] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$s - Attached rear to graph (-9223372036854775808, min@min)
+13:34:37.882 [worker-akka.actor.default-dispatcher-10] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$y - Starting...
+2019-10-23T13:34:52.068+0000: 40.763: [GC (Allocation Failure) 2019-10-23T13:34:52.069+0000: 40.763: [DefNew: 409600K->32424K(460800K), 0.0445117 secs] 435528K->58352K(1484800K), 0.0446137 secs] [Times: user=0.02 sys=0.02, real=0.05 secs] 
+2019-10-23T13:35:03.384+0000: 52.078: [GC (Allocation Failure) 2019-10-23T13:35:03.384+0000: 52.078: [DefNew: 442024K->69K(460800K), 0.0346235 secs] 467952K->55922K(1484800K), 0.0347194 secs] [Times: user=0.02 sys=0.01, real=0.03 secs] 
+2019-10-23T13:35:16.659+0000: 65.354: [GC (Allocation Failure) 2019-10-23T13:35:16.659+0000: 65.354: [DefNew: 409669K->556K(460800K), 0.0037605 secs] 465522K->56410K(1484800K), 0.0038448 secs] [Times: user=0.00 sys=0.00, real=0.01 secs] 
+2019-10-23T13:35:32.562+0000: 81.256: [GC (Allocation Failure) 2019-10-23T13:35:32.562+0000: 81.256: [DefNew: 410156K->307K(460800K), 0.0032674 secs] 466010K->56160K(1484800K), 0.0033570 secs] [Times: user=0.01 sys=0.00, real=0.00 secs] 
+2019-10-23T13:35:48.592+0000: 97.287: [GC (Allocation Failure) 2019-10-23T13:35:48.593+0000: 97.287: [DefNew: 409907K->346K(460800K), 0.0034157 secs] 465760K->56199K(1484800K), 0.0035341 secs] [Times: user=0.00 sys=0.00, real=0.00 secs] 
+2019-10-23T13:36:04.750+0000: 113.444: [GC (Allocation Failure) 2019-10-23T13:36:04.750+0000: 113.444: [DefNew: 409946K->309K(460800K), 0.0032977 secs] 465799K->56163K(1484800K), 0.0033928 secs] [Times: user=0.00 sys=0.00, real=0.00 secs] 
+2019-10-23T13:36:20.852+0000: 129.546: [GC (Allocation Failure) 2019-10-23T13:36:20.852+0000: 129.546: [DefNew: 409909K->371K(460800K), 0.0035369 secs] 465763K->56225K(1484800K), 0.0036262 secs] [Times: user=0.01 sys=0.00, real=0.00 secs] 
+2019-10-23T13:36:37.026+0000: 145.720: [GC (Allocation Failure) 2019-10-23T13:36:37.026+0000: 145.721: [DefNew: 409971K->352K(460800K), 0.0033520 secs] 465825K->56206K(1484800K), 0.0034452 secs] [Times: user=0.01 sys=0.00, real=0.01 secs] 
+2019-10-23T13:36:53.227+0000: 161.921: [GC (Allocation Failure) 2019-10-23T13:36:53.227+0000: 161.921: [DefNew: 409952K->362K(460800K), 0.0033460 secs] 465806K->56215K(1484800K), 0.0034326 secs] [Times: user=0.00 sys=0.00, real=0.01 secs] 
+2019-10-23T13:37:09.460+0000: 178.154: [GC (Allocation Failure) 2019-10-23T13:37:09.460+0000: 178.154: [DefNew: 409962K->353K(460800K), 0.0032809 secs] 465815K->56207K(1484800K), 0.0033747 secs] [Times: user=0.01 sys=0.00, real=0.01 secs] 
+2019-10-23T13:37:25.587+0000: 194.281: [GC (Allocation Failure) 2019-10-23T13:37:25.587+0000: 194.281: [DefNew: 409953K->421K(460800K), 0.0037583 secs] 465807K->56274K(1484800K), 0.0038635 secs] [Times: user=0.01 sys=0.00, real=0.01 secs] 
+2019-10-23T13:37:41.698+0000: 210.392: [GC (Allocation Failure) 2019-10-23T13:37:41.698+0000: 210.392: [DefNew: 410021K->447K(460800K), 0.0037629 secs] 465874K->56300K(1484800K), 0.0038532 secs] [Times: user=0.01 sys=0.00, real=0.01 secs] 
+2019-10-23T13:37:57.775+0000: 226.469: [GC (Allocation Failure) 2019-10-23T13:37:57.775+0000: 226.469: [DefNew: 410047K->410K(460800K), 0.0035041 secs] 465900K->56263K(1484800K), 0.0035957 secs] [Times: user=0.00 sys=0.00, real=0.00 secs] 
+2019-10-23T13:38:13.961+0000: 242.655: [GC (Allocation Failure) 2019-10-23T13:38:13.961+0000: 242.655: [DefNew: 410010K->432K(460800K), 0.0034075 secs] 465863K->56285K(1484800K), 0.0035156 secs] [Times: user=0.01 sys=0.00, real=0.01 secs] 
+2019-10-23T13:38:30.153+0000: 258.847: [GC (Allocation Failure) 2019-10-23T13:38:30.153+0000: 258.847: [DefNew: 410032K->436K(460800K), 0.0035286 secs] 465885K->56289K(1484800K), 0.0036231 secs] [Times: user=0.01 sys=0.00, real=0.00 secs] 
+2019-10-23T13:38:46.301+0000: 274.995: [GC (Allocation Failure) 2019-10-23T13:38:46.301+0000: 274.995: [DefNew: 410036K->450K(460800K), 0.0036990 secs] 465889K->56303K(1484800K), 0.0037962 secs] [Times: user=0.00 sys=0.00, real=0.01 secs] 
+2019-10-23T13:38:54.237+0000: 282.931: [GC (Allocation Failure) 2019-10-23T13:38:54.237+0000: 282.931: [DefNew: 410050K->733K(460800K), 0.0051574 secs] 465903K->56615K(1484800K), 0.0052519 secs] [Times: user=0.00 sys=0.00, real=0.01 secs] 
+2019-10-23T13:39:00.162+0000: 288.857: [GC (Allocation Failure) 2019-10-23T13:39:00.163+0000: 288.857: [DefNew: 410333K->1159K(460800K), 0.0074481 secs] 466215K->57231K(1484800K), 0.0075845 secs] [Times: user=0.01 sys=0.00, real=0.01 secs] 
+13:39:03.122 [Client] INFO  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: has been disconnected from Connection 17
+13:39:03.128 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.131 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.132 [Client] INFO  c.s.f.r.e.s.SocketFront  - FlameSocketGraphDeployerFront@flamestream-benchmarks-worker-15 has been disconnected from Connection 17
+13:39:03.182 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.185 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.190 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.200 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.201 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.204 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.205 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.205 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.205 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.206 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.212 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.215 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.226 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.226 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.230 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.233 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.240 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.243 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.245 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.247 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.248 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.249 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.252 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.265 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.267 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.290 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.295 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.295 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.298 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.301 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.306 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.313 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.315 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.320 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.323 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.328 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.330 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.332 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.333 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.335 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.337 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.337 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.338 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.341 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.386 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.390 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.393 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.403 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.405 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.406 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.413 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.416 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.417 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.426 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.427 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.427 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.428 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.430 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.430 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.430 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.431 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.431 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.432 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.433 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.434 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.434 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.434 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.435 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.438 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.441 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.442 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.450 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.454 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.468 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.522 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.522 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.522 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.523 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.528 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.531 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.540 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.541 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.546 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.550 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.555 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.557 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.561 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.564 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.566 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.569 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.578 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.579 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.579 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.580 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.586 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.598 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.606 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.608 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.608 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.608 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.609 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.609 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.618 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.624 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.625 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.625 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.629 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.638 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.642 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.647 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.658 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.658 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.666 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.669 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.669 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.675 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.685 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.686 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.686 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.689 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.695 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.698 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.699 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.710 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.713 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.714 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.718 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.720 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.720 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.720 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.750 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.761 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.780 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.781 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.785 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.854 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.858 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.859 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.861 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.863 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.863 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.866 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.872 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.888 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.891 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.894 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.896 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.897 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.899 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.901 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.904 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.904 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.905 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.918 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.921 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.921 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.922 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.926 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.927 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.927 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.927 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.929 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.930 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.930 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.935 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.936 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.936 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.936 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.942 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.944 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.947 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.948 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.950 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.951 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.958 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.966 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.970 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.970 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.970 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.974 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.978 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.981 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.986 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.992 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.993 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.993 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.993 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.993 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.998 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:03.998 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.003 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.003 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.006 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.007 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.008 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.009 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.018 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.038 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.039 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.041 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.054 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.059 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.059 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.059 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.060 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.060 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.066 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.073 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.073 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.074 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.077 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.086 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.093 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.095 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.096 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.101 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.108 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.114 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.118 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.118 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.128 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.133 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.133 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.146 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.148 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.154 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.159 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.166 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.172 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.172 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.176 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.180 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.181 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.181 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.181 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.181 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.181 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.181 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.190 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.194 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.196 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.196 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.196 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.208 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.209 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.210 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.210 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.213 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.214 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.214 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.214 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.214 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.222 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.222 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.225 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.226 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.240 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.240 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.241 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.241 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.241 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.245 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.247 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.247 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.257 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.262 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.262 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.262 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.268 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.273 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.273 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.276 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.276 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.276 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.276 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.290 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.294 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.297 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.301 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.302 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.305 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.305 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.305 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.308 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.326 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.326 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.357 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.360 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.378 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.379 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.391 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.391 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.391 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.391 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.391 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.391 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.392 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.392 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.392 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.392 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.392 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.392 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.392 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.394 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.394 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.394 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.426 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.429 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.429 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.430 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.430 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.430 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.430 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.433 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.433 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.433 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.434 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.434 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.436 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.438 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.444 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.447 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.449 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.452 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.452 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.454 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.455 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.455 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.455 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.455 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.455 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.455 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.458 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.458 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.459 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.459 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.459 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.459 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.459 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.460 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.460 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.464 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.467 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.473 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.474 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.474 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.476 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.484 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.545 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.546 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.561 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.577 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.584 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.587 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.593 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.599 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.600 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.604 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.622 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.622 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.622 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.622 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.623 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.623 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.623 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.623 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.624 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.677 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.682 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.683 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.689 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.694 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.699 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.700 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.703 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.704 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.742 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.752 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.793 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.821 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.915 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.916 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.917 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.917 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.933 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.935 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.936 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.936 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.936 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.937 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.938 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.938 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.938 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.938 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.938 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.968 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:04.992 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.029 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.031 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.113 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.115 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.116 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.116 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.116 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.116 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.116 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.116 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.273 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.277 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.279 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.279 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.279 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.279 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.279 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.279 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.284 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.286 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.287 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.287 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.287 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.287 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.393 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.396 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.396 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.396 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.396 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.396 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.396 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.396 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.396 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.396 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.400 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.400 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.400 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.400 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.400 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.400 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.400 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.482 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.497 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.499 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.499 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.499 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.499 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.501 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.502 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.521 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.525 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.534 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.534 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.534 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.535 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.617 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.624 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.625 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.625 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.625 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.625 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.625 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.653 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.657 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.657 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.756 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.756 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.758 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.761 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.762 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.762 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.763 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.763 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.766 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.766 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.766 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.766 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.766 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.766 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.766 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.868 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.870 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.870 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.873 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.914 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.920 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.920 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.920 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.949 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.951 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.952 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.990 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.992 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.993 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.993 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.993 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.993 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.993 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.993 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:05.993 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.045 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.048 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.048 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.048 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.052 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.052 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.052 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.052 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.081 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.083 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.083 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.166 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.174 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.175 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.175 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.175 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.175 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.175 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.175 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.175 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.175 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.175 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.175 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.175 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.175 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.175 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.188 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.195 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.196 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.196 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.197 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.197 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.198 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.198 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.198 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.245 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.250 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.250 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.250 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.250 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.250 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.250 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.250 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.250 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.250 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.250 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.277 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.279 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.279 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.279 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.279 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.279 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.280 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.280 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.280 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.280 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.288 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.289 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.289 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.289 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.289 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.289 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.289 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.289 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.289 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.289 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.289 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.289 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.289 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.289 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.301 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.304 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.304 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.304 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.304 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:06.304 [worker-akka.actor.default-dispatcher-16] WARN  c.s.f.r.e.s.SocketRear  - FlameSocketGraphDeployerRear@flamestream-benchmarks-worker-15: writing to closed log
+13:39:07.350 [worker-akka.actor.default-dispatcher-16] INFO  a.r.a.Association(akka://worker) akka.remote.artery.Association(akka://worker) - Association to [akka://worker@flamestream-benchmarks-worker-0:5412] having UID [-4181740162366886028] has been stopped. All messages to this UID will be delivered to dead letters. Reason: ActorSystem terminated
+13:39:07.989 [worker-akka.actor.default-dispatcher-16] INFO  a.r.a.Association(akka://worker) akka.remote.artery.Association(akka://worker) - Association to [akka://worker@flamestream-benchmarks-worker-1:5412] having UID [-8407876907935476535] has been stopped. All messages to this UID will be delivered to dead letters. Reason: ActorSystem terminated
+13:39:08.059 [worker-akka.actor.default-dispatcher-16] INFO  a.r.a.Association(akka://worker) akka.remote.artery.Association(akka://worker) - Association to [akka://worker@flamestream-benchmarks-worker-3:5412] having UID [7776845809980262914] has been stopped. All messages to this UID will be delivered to dead letters. Reason: ActorSystem terminated
+13:39:08.149 [worker-akka.actor.default-dispatcher-16] INFO  a.r.a.Association(akka://worker) akka.remote.artery.Association(akka://worker) - Association to [akka://worker@flamestream-benchmarks-worker-2:5412] having UID [-297269061275205438] has been stopped. All messages to this UID will be delivered to dead letters. Reason: ActorSystem terminated
+13:39:08.239 [worker-akka.actor.default-dispatcher-16] INFO  a.r.a.Association(akka://worker) akka.remote.artery.Association(akka://worker) - Association to [akka://worker@flamestream-benchmarks-worker-4:5412] having UID [-2613173966102741723] has been stopped. All messages to this UID will be delivered to dead letters. Reason: ActorSystem terminated
+13:39:08.669 [worker-akka.actor.default-dispatcher-16] INFO  a.r.a.Association(akka://worker) akka.remote.artery.Association(akka://worker) - Association to [akka://worker@flamestream-benchmarks-worker-5:5412] having UID [43233983665780353] has been stopped. All messages to this UID will be delivered to dead letters. Reason: ActorSystem terminated
+13:39:09.340 [worker-akka.actor.default-dispatcher-16] INFO  a.r.a.Association(akka://worker) akka.remote.artery.Association(akka://worker) - Association to [akka://worker@flamestream-benchmarks-worker-7:5412] having UID [-5782446011545283026] has been stopped. All messages to this UID will be delivered to dead letters. Reason: ActorSystem terminated
+13:39:09.419 [worker-akka.actor.default-dispatcher-16] INFO  a.r.a.Association(akka://worker) akka.remote.artery.Association(akka://worker) - Association to [akka://worker@flamestream-benchmarks-worker-9:5412] having UID [-2559587289427418929] has been stopped. All messages to this UID will be delivered to dead letters. Reason: ActorSystem terminated
+13:39:09.530 [worker-akka.actor.default-dispatcher-16] INFO  a.r.a.Association(akka://worker) akka.remote.artery.Association(akka://worker) - Association to [akka://worker@flamestream-benchmarks-worker-8:5412] having UID [5790528606737003664] has been stopped. All messages to this UID will be delivered to dead letters. Reason: ActorSystem terminated
+13:39:09.559 [worker-akka.actor.default-dispatcher-16] INFO  a.r.a.Association(akka://worker) akka.remote.artery.Association(akka://worker) - Association to [akka://worker@flamestream-benchmarks-worker-6:5412] having UID [7533451865097077289] has been stopped. All messages to this UID will be delivered to dead letters. Reason: ActorSystem terminated
+2019-10-23T13:39:09.829+0000: 298.523: [GC (Allocation Failure) 2019-10-23T13:39:09.829+0000: 298.523: [DefNew: 410759K->399K(460800K), 0.0038271 secs] 466831K->56474K(1484800K), 0.0039197 secs] [Times: user=0.01 sys=0.00, real=0.01 secs] 
+13:39:09.891 [worker-akka.actor.default-dispatcher-16] INFO  a.r.a.Association(akka://worker) akka.remote.artery.Association(akka://worker) - Association to [akka://worker@flamestream-benchmarks-worker-10:5412] having UID [8222640602307273937] has been stopped. All messages to this UID will be delivered to dead letters. Reason: ActorSystem terminated
+13:39:09.917 [worker-akka.actor.default-dispatcher-15] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/negotiator - Stopped
+13:39:09.917 [worker-akka.actor.default-dispatcher-15] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/edge/FlameSocketGraphDeployerFront - Stopped
+13:39:09.919 [worker-akka.actor.default-dispatcher-10] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$a - Stopped
+13:39:09.919 [worker-akka.actor.default-dispatcher-10] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$b - Stopped
+13:39:09.919 [worker-akka.actor.default-dispatcher-10] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$c - Stopped
+13:39:09.919 [worker-akka.actor.default-dispatcher-10] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$d - Stopped
+13:39:09.919 [worker-akka.actor.default-dispatcher-10] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$e - Stopped
+13:39:09.919 [worker-akka.actor.default-dispatcher-10] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$f - Stopped
+13:39:09.919 [worker-akka.actor.default-dispatcher-10] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$g - Stopped
+13:39:09.919 [worker-akka.actor.default-dispatcher-10] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$h - Stopped
+13:39:09.919 [worker-akka.actor.default-dispatcher-10] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$i - Stopped
+13:39:09.919 [worker-akka.actor.default-dispatcher-10] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$j - Stopped
+13:39:09.919 [worker-akka.actor.default-dispatcher-10] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$k - Stopped
+13:39:09.919 [worker-akka.actor.default-dispatcher-10] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$l - Stopped
+13:39:09.919 [worker-akka.actor.default-dispatcher-15] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$m - Stopped
+13:39:09.920 [worker-akka.actor.default-dispatcher-15] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$n - Stopped
+13:39:09.920 [worker-akka.actor.default-dispatcher-15] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$o - Stopped
+13:39:09.920 [worker-akka.actor.default-dispatcher-15] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$p - Stopped
+13:39:09.920 [worker-akka.actor.default-dispatcher-15] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$q - Stopped
+13:39:09.920 [worker-akka.actor.default-dispatcher-15] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$r - Stopped
+13:39:09.921 [worker-akka.actor.default-dispatcher-15] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$s - Stopped
+13:39:09.921 [worker-akka.actor.default-dispatcher-15] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$t - Stopped
+13:39:09.921 [worker-akka.actor.default-dispatcher-15] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$u - Stopped
+13:39:09.921 [worker-akka.actor.default-dispatcher-15] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$v - Stopped
+13:39:09.922 [worker-akka.actor.default-dispatcher-15] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$w - Stopped
+13:39:09.922 [worker-akka.actor.default-dispatcher-15] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$x - Stopped
+13:39:09.922 [worker-akka.actor.default-dispatcher-15] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph/$y - Stopped
+13:39:09.925 [worker-akka.actor.default-dispatcher-9] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/edge/FlameSocketGraphDeployerRear - Stopped
+13:39:09.926 [worker-akka.actor.default-dispatcher-12] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/edge - Stopped
+13:39:09.929 [worker-akka.actor.default-dispatcher-9] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph/graph - Stopped
+13:39:09.935 [worker-akka.actor.default-dispatcher-19] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher/graph - Stopped
+13:39:09.939 [worker-akka.actor.default-dispatcher-19] INFO  a.a.LocalActorRef akka://worker/user/watcher/processing-watcher - Stopped
+13:39:09.940 [Curator-Framework-0] INFO  o.a.c.f.i.CuratorFrameworkImpl  - backgroundOperationsLoop exiting
+13:39:09.952 [worker-akka.actor.default-dispatcher-6-EventThread] INFO  o.a.z.ClientCnxn  - EventThread shut down for session: 0x10001b8fcfe000f
+13:39:09.952 [worker-akka.actor.default-dispatcher-19] INFO  o.a.z.ZooKeeper  - Session: 0x10001b8fcfe000f closed
+13:39:09.953 [worker-akka.actor.default-dispatcher-20] INFO  a.a.RepointableActorRef akka://worker/user/watcher - Stopped
+13:39:09.955 [Curator-PathChildrenCache-0] ERROR o.a.c.f.r.c.PathChildrenCache  - 
+java.lang.IllegalStateException: instance must be started before calling this method
+	at org.apache.curator.shaded.com.google.common.base.Preconditions.checkState(Preconditions.java:444)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getChildren(CuratorFrameworkImpl.java:456)
+	at org.apache.curator.framework.recipes.cache.PathChildrenCache.refresh(PathChildrenCache.java:521)
+	at org.apache.curator.framework.recipes.cache.RefreshOperation.invoke(RefreshOperation.java:35)
+	at org.apache.curator.framework.recipes.cache.PathChildrenCache$9.run(PathChildrenCache.java:786)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+13:39:09.966 [worker-akka.actor.default-dispatcher-19] INFO  a.r.RemoteActorRefProvider$RemotingTerminator akka://worker@flamestream-benchmarks-worker-15:5412/system/remoting-terminator - Shutting down remote daemon.
+13:39:09.966 [worker-akka.actor.default-dispatcher-19] INFO  a.r.RemoteActorRefProvider$RemotingTerminator akka://worker@flamestream-benchmarks-worker-15:5412/system/remoting-terminator - Remote daemon shut down; proceeding with flushing remote transports.
+13:39:10.434 [worker-akka.actor.default-dispatcher-19] ERROR a.r.a.Association(akka://worker) akka.remote.artery.Association(akka://worker) - Outbound control stream to [akka://worker@flamestream-benchmarks-worker-0:5412] failed after shutdown. 
+akka.remote.artery.Association$OutboundStreamStopQuarantinedSignal$: 
+13:39:10.438 [worker-akka.actor.default-dispatcher-19] ERROR a.r.a.Association(akka://worker) akka.remote.artery.Association(akka://worker) - Outbound message stream to [akka://worker@flamestream-benchmarks-worker-0:5412] failed after shutdown. 
+akka.remote.artery.Association$OutboundStreamStopQuarantinedSignal$: 
+13:39:11.296 [worker-akka.actor.default-dispatcher-19] INFO  a.r.RemoteActorRefProvider$RemotingTerminator akka://worker@flamestream-benchmarks-worker-15:5412/system/remoting-terminator - Remoting shut down.
+Heap
+ def new generation   total 460800K, used 33556K [0x00000000a2400000, 0x00000000c1800000, 0x00000000c1800000)
+  eden space 409600K,   8% used [0x00000000a2400000, 0x00000000a4461680, 0x00000000bb400000)
+  from space 51200K,   0% used [0x00000000be600000, 0x00000000be663d50, 0x00000000c1800000)
+  to   space 51200K,   0% used [0x00000000bb400000, 0x00000000bb400000, 0x00000000be600000)
+ tenured generation   total 1024000K, used 56075K [0x00000000c1800000, 0x0000000100000000, 0x0000000100000000)
+   the space 1024000K,   5% used [0x00000000c1800000, 0x00000000c4ec2cb0, 0x00000000c4ec2e00, 0x0000000100000000)
+ Metaspace       used 40703K, capacity 43514K, committed 43648K, reserved 1087488K
+  class space    used 5343K, capacity 5666K, committed 5760K, reserved 1048576K

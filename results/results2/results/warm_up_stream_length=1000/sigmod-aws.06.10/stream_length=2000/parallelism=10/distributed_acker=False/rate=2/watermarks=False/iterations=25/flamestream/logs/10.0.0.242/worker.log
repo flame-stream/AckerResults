@@ -1,0 +1,57 @@
+12:57:07,851 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+12:57:07,851 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+12:57:07,852 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [jar:file:/root/flamestream/lib/flamestream-runtime-1.0-SNAPSHOT.jar!/logback.xml]
+12:57:07,852 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs multiple times on the classpath.
+12:57:07,857 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/root/flamestream/lib/flamestream-runtime-1.0-SNAPSHOT.jar!/logback.xml]
+12:57:07,857 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/root/flamestream/flamestream-runtime-1.0-SNAPSHOT.jar!/logback.xml]
+12:57:07,877 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@3fb6a447 - URL [jar:file:/root/flamestream/lib/flamestream-runtime-1.0-SNAPSHOT.jar!/logback.xml] is not of type file
+12:57:07,948 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+12:57:07,949 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+12:57:07,969 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+12:57:07,987 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+12:57:08,067 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+12:57:08,072 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [FILE]
+12:57:08,103 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@127618319 - No compression will be used
+12:57:08,104 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@127618319 - Will use the pattern /tmp/application_%d{yyyy-MM-dd}.%i.log for the active file
+12:57:08,107 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@6b2fad11 - The date pattern is 'yyyy-MM-dd' from file name pattern '/tmp/application_%d{yyyy-MM-dd}.%i.log'.
+12:57:08,107 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@6b2fad11 - Roll-over at midnight.
+12:57:08,112 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@6b2fad11 - Setting initial period to Tue Jun 11 12:55:50 UTC 2019
+12:57:08,112 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@6b2fad11 - SizeAndTimeBasedFNATP is deprecated. Use SizeAndTimeBasedRollingPolicy instead
+12:57:08,112 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@6b2fad11 - For more information see http://logback.qos.ch/manual/appenders.html#SizeAndTimeBasedRollingPolicy
+12:57:08,116 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+12:57:08,121 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - Active log file name: /tmp/application.log
+12:57:08,121 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - File property is set to [/tmp/application.log]
+12:57:08,122 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to WARN
+12:57:08,122 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+12:57:08,124 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [FILE] to Logger[ROOT]
+12:57:08,124 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+12:57:08,125 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@79698539 - Registering current configuration as safe fallback point
+
+Ama winner
+Ama winner
+2019-06-11T12:57:09.744+0000: 2.076: [Full GC (Metadata GC Threshold) 2019-06-11T12:57:09.744+0000: 2.076: [Tenured: 0K->15208K(341376K), 0.0391539 secs] 117718K->15208K(494976K), [Metaspace: 20723K->20723K(1067008K)], 0.0392231 secs] [Times: user=0.03 sys=0.00, real=0.04 secs] 
+2019-06-11T12:57:26.385+0000: 18.718: [GC (Allocation Failure) 2019-06-11T12:57:26.385+0000: 18.718: [DefNew: 136576K->16817K(153600K), 0.0246195 secs] 151784K->51556K(494976K), 0.0246901 secs] [Times: user=0.02 sys=0.00, real=0.02 secs] 
+12:57:35.047 [Curator-PathChildrenCache-0] ERROR o.a.c.f.r.c.PathChildrenCache  - 
+java.lang.IllegalStateException: instance must be started before calling this method
+	at org.apache.curator.shaded.com.google.common.base.Preconditions.checkState(Preconditions.java:444)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getChildren(CuratorFrameworkImpl.java:456)
+	at org.apache.curator.framework.recipes.cache.PathChildrenCache.refresh(PathChildrenCache.java:521)
+	at org.apache.curator.framework.recipes.cache.RefreshOperation.invoke(RefreshOperation.java:35)
+	at org.apache.curator.framework.recipes.cache.PathChildrenCache$9.run(PathChildrenCache.java:786)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-06-11T12:57:35.052+0000: 27.385: [Full GC (Metadata GC Threshold) 2019-06-11T12:57:35.052+0000: 27.385: [Tenured: 34739K->22811K(341376K), 0.0381683 secs] 85960K->22811K(494976K), [Metaspace: 34694K->34694K(1079296K)], 0.0382466 secs] [Times: user=0.04 sys=0.00, real=0.04 secs] 
+Heap
+ def new generation   total 153600K, used 15412K [0x00000000e0c00000, 0x00000000eb2a0000, 0x00000000eb2a0000)
+  eden space 136576K,  11% used [0x00000000e0c00000, 0x00000000e1b0d398, 0x00000000e9160000)
+  from space 17024K,   0% used [0x00000000ea200000, 0x00000000ea200000, 0x00000000eb2a0000)
+  to   space 17024K,   0% used [0x00000000e9160000, 0x00000000e9160000, 0x00000000ea200000)
+ tenured generation   total 341376K, used 22811K [0x00000000eb2a0000, 0x0000000100000000, 0x0000000100000000)
+   the space 341376K,   6% used [0x00000000eb2a0000, 0x00000000ec8e6ee8, 0x00000000ec8e7000, 0x0000000100000000)
+ Metaspace       used 35177K, capacity 36028K, committed 36224K, reserved 1081344K
+  class space    used 4786K, capacity 4984K, committed 4992K, reserved 1048576K

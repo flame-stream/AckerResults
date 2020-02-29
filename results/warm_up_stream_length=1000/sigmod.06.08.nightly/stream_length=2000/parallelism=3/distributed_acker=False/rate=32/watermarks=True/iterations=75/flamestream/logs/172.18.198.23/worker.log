@@ -1,0 +1,129 @@
+06:36:46,436 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+06:36:46,436 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+06:36:46,436 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [jar:file:/home/nikitasokolov/flamestream/lib/flamestream-runtime-1.0-SNAPSHOT.jar!/logback.xml]
+06:36:46,437 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs multiple times on the classpath.
+06:36:46,437 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/home/nikitasokolov/flamestream/lib/flamestream-runtime-1.0-SNAPSHOT.jar!/logback.xml]
+06:36:46,437 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/home/nikitasokolov/flamestream/flamestream-runtime-1.0-SNAPSHOT.jar!/logback.xml]
+06:36:46,453 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@6bf256fa - URL [jar:file:/home/nikitasokolov/flamestream/lib/flamestream-runtime-1.0-SNAPSHOT.jar!/logback.xml] is not of type file
+06:36:46,504 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+06:36:46,505 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+06:36:46,512 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+06:36:46,519 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+06:36:46,575 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+06:36:46,580 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [FILE]
+06:36:46,601 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@114132791 - No compression will be used
+06:36:46,602 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@114132791 - Will use the pattern /tmp/application_%d{yyyy-MM-dd}.%i.log for the active file
+06:36:46,605 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22f71333 - The date pattern is 'yyyy-MM-dd' from file name pattern '/tmp/application_%d{yyyy-MM-dd}.%i.log'.
+06:36:46,605 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22f71333 - Roll-over at midnight.
+06:36:46,609 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22f71333 - Setting initial period to Thu Jun 06 22:00:24 MSK 2019
+06:36:46,609 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22f71333 - SizeAndTimeBasedFNATP is deprecated. Use SizeAndTimeBasedRollingPolicy instead
+06:36:46,609 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@22f71333 - For more information see http://logback.qos.ch/manual/appenders.html#SizeAndTimeBasedRollingPolicy
+06:36:46,613 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+06:36:46,615 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - Active log file name: /tmp/application.log
+06:36:46,615 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - File property is set to [/tmp/application.log]
+06:36:46,617 |-ERROR in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - openFile(/tmp/application.log,true) call failed. java.io.FileNotFoundException: /tmp/application.log (Permission denied)
+	at java.io.FileNotFoundException: /tmp/application.log (Permission denied)
+	at 	at java.io.FileOutputStream.open0(Native Method)
+	at 	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at 	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at 	at ch.qos.logback.core.recovery.ResilientFileOutputStream.<init>(ResilientFileOutputStream.java:26)
+	at 	at ch.qos.logback.core.FileAppender.openFile(FileAppender.java:204)
+	at 	at ch.qos.logback.core.FileAppender.start(FileAppender.java:127)
+	at 	at ch.qos.logback.core.rolling.RollingFileAppender.start(RollingFileAppender.java:100)
+	at 	at ch.qos.logback.core.joran.action.AppenderAction.end(AppenderAction.java:90)
+	at 	at ch.qos.logback.core.joran.spi.Interpreter.callEndAction(Interpreter.java:309)
+	at 	at ch.qos.logback.core.joran.spi.Interpreter.endElement(Interpreter.java:193)
+	at 	at ch.qos.logback.core.joran.spi.Interpreter.endElement(Interpreter.java:179)
+	at 	at ch.qos.logback.core.joran.spi.EventPlayer.play(EventPlayer.java:62)
+	at 	at ch.qos.logback.core.joran.GenericConfigurator.doConfigure(GenericConfigurator.java:165)
+	at 	at ch.qos.logback.core.joran.GenericConfigurator.doConfigure(GenericConfigurator.java:152)
+	at 	at ch.qos.logback.core.joran.GenericConfigurator.doConfigure(GenericConfigurator.java:110)
+	at 	at ch.qos.logback.core.joran.GenericConfigurator.doConfigure(GenericConfigurator.java:53)
+	at 	at ch.qos.logback.classic.util.ContextInitializer.configureByResource(ContextInitializer.java:75)
+	at 	at ch.qos.logback.classic.util.ContextInitializer.autoConfig(ContextInitializer.java:150)
+	at 	at org.slf4j.impl.StaticLoggerBinder.init(StaticLoggerBinder.java:84)
+	at 	at org.slf4j.impl.StaticLoggerBinder.<clinit>(StaticLoggerBinder.java:55)
+	at 	at org.slf4j.LoggerFactory.bind(LoggerFactory.java:150)
+	at 	at org.slf4j.LoggerFactory.performInitialization(LoggerFactory.java:124)
+	at 	at org.slf4j.LoggerFactory.getILoggerFactory(LoggerFactory.java:412)
+	at 	at org.slf4j.LoggerFactory.getLogger(LoggerFactory.java:357)
+	at 	at org.slf4j.LoggerFactory.getLogger(LoggerFactory.java:383)
+	at 	at com.spbsu.flamestream.runtime.WorkerApplication.<init>(WorkerApplication.java:26)
+	at 	at com.spbsu.flamestream.runtime.WorkerApplication.main(WorkerApplication.java:68)
+06:36:46,617 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to WARN
+06:36:46,617 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+06:36:46,617 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [FILE] to Logger[ROOT]
+06:36:46,617 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+06:36:46,618 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@3498ed - Registering current configuration as safe fallback point
+
+2019-06-09T06:36:47.633+0300: 1.391: [GC (Metadata GC Threshold) [PSYoungGen: 95295K->15923K(149504K)] 95295K->16003K(491008K), 0.0196278 secs] [Times: user=0.11 sys=0.03, real=0.02 secs] 
+2019-06-09T06:36:47.652+0300: 1.411: [Full GC (Metadata GC Threshold) [PSYoungGen: 15923K->0K(149504K)] [ParOldGen: 80K->15081K(341504K)] 16003K->15081K(491008K), [Metaspace: 20804K->20804K(1067008K)], 0.0238968 secs] [Times: user=0.14 sys=0.02, real=0.03 secs] 
+06:36:55.136 [Curator-PathChildrenCache-2] WARN  o.a.c.u.ZKPaths  - The version of ZooKeeper being used doesn't support Container nodes. CreateMode.PERSISTENT will be used instead.
+2019-06-09T06:36:55.760+0300: 9.519: [GC (Allocation Failure) [PSYoungGen: 128512K->16807K(149504K)] 143593K->51427K(491008K), 0.0239101 secs] [Times: user=0.18 sys=0.02, real=0.03 secs] 
+2019-06-09T06:36:55.916+0300: 9.675: [GC (Metadata GC Threshold) [PSYoungGen: 28911K->6414K(149504K)] 63531K->41042K(491008K), 0.0041656 secs] [Times: user=0.03 sys=0.00, real=0.00 secs] 
+2019-06-09T06:36:55.920+0300: 9.679: [Full GC (Metadata GC Threshold) [PSYoungGen: 6414K->0K(149504K)] [ParOldGen: 34628K->30028K(341504K)] 41042K->30028K(491008K), [Metaspace: 34453K->34453K(1079296K)], 0.0387817 secs] [Times: user=0.26 sys=0.00, real=0.04 secs] 
+2019-06-09T06:37:00.226+0300: 13.985: [GC (Allocation Failure) [PSYoungGen: 128512K->576K(149504K)] 158540K->30612K(491008K), 0.0754227 secs] [Times: user=0.02 sys=0.00, real=0.07 secs] 
+2019-06-09T06:37:04.715+0300: 18.474: [GC (Allocation Failure) [PSYoungGen: 129088K->544K(129536K)] 159124K->30588K(471040K), 0.0023404 secs] [Times: user=0.01 sys=0.00, real=0.00 secs] 
+2019-06-09T06:37:09.218+0300: 22.976: [GC (Allocation Failure) [PSYoungGen: 129056K->704K(148480K)] 159100K->30756K(489984K), 0.0045227 secs] [Times: user=0.02 sys=0.00, real=0.01 secs] 
+2019-06-09T06:37:13.649+0300: 27.407: [GC (Allocation Failure) [PSYoungGen: 126656K->672K(147968K)] 156708K->30724K(489472K), 0.0037052 secs] [Times: user=0.01 sys=0.00, real=0.00 secs] 
+2019-06-09T06:37:18.071+0300: 31.829: [GC (Allocation Failure) [PSYoungGen: 126624K->736K(150016K)] 156676K->30796K(491520K), 0.0102494 secs] [Times: user=0.09 sys=0.01, real=0.01 secs] 
+2019-06-09T06:37:22.629+0300: 36.387: [GC (Allocation Failure) [PSYoungGen: 129248K->640K(148992K)] 159308K->30708K(490496K), 0.0040974 secs] [Times: user=0.02 sys=0.00, real=0.00 secs] 
+2019-06-09T06:37:27.186+0300: 40.945: [GC (Allocation Failure) [PSYoungGen: 129152K->704K(151552K)] 159220K->30772K(493056K), 0.0113731 secs] [Times: user=0.09 sys=0.00, real=0.01 secs] 
+2019-06-09T06:37:31.873+0300: 45.631: [GC (Allocation Failure) [PSYoungGen: 132288K->736K(150528K)] 162356K->30812K(492032K), 0.0050312 secs] [Times: user=0.03 sys=0.00, real=0.01 secs] 
+2019-06-09T06:37:36.563+0300: 50.321: [GC (Allocation Failure) [PSYoungGen: 132320K->800K(153088K)] 162396K->30876K(494592K), 0.0045635 secs] [Times: user=0.03 sys=0.00, real=0.00 secs] 
+2019-06-09T06:37:41.303+0300: 55.062: [GC (Allocation Failure) [PSYoungGen: 135456K->800K(152064K)] 165532K->30884K(493568K), 0.0027880 secs] [Times: user=0.01 sys=0.00, real=0.00 secs] 
+2019-06-09T06:37:46.089+0300: 59.847: [GC (Allocation Failure) [PSYoungGen: 135456K->736K(154624K)] 165540K->30828K(496128K), 0.0024683 secs] [Times: user=0.00 sys=0.02, real=0.00 secs] 
+2019-06-09T06:37:51.606+0300: 65.364: [GC (Allocation Failure) [PSYoungGen: 138976K->1207K(154112K)] 169068K->31307K(495616K), 0.0027802 secs] [Times: user=0.01 sys=0.00, real=0.00 secs] 
+2019-06-09T06:37:57.896+0300: 71.654: [GC (Allocation Failure) [PSYoungGen: 139447K->960K(156160K)] 169547K->31068K(497664K), 0.0038553 secs] [Times: user=0.02 sys=0.00, real=0.00 secs] 
+06:38:12.664 [Curator-PathChildrenCache-0] ERROR o.a.c.f.r.c.PathChildrenCache  - 
+java.lang.IllegalStateException: instance must be started before calling this method
+	at org.apache.curator.shaded.com.google.common.base.Preconditions.checkState(Preconditions.java:444)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getChildren(CuratorFrameworkImpl.java:456)
+	at org.apache.curator.framework.recipes.cache.PathChildrenCache.refresh(PathChildrenCache.java:521)
+	at org.apache.curator.framework.recipes.cache.RefreshOperation.invoke(RefreshOperation.java:35)
+	at org.apache.curator.framework.recipes.cache.PathChildrenCache$9.run(PathChildrenCache.java:786)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+06:38:12.760 [worker-akka.actor.default-dispatcher-2] ERROR c.s.f.r.WorkerApplication  - Something went wrong during trace flush
+java.nio.file.AccessDeniedException: /tmp/trace.csv
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:214)
+	at java.nio.file.spi.FileSystemProvider.newOutputStream(FileSystemProvider.java:434)
+	at java.nio.file.Files.newOutputStream(Files.java:216)
+	at java.nio.file.Files.newBufferedWriter(Files.java:2860)
+	at java.nio.file.Files.newBufferedWriter(Files.java:2896)
+	at com.spbsu.flamestream.runtime.utils.tracing.Tracing.flush(Tracing.java:35)
+	at com.spbsu.flamestream.runtime.WorkerApplication.lambda$run$0(WorkerApplication.java:109)
+	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$addRec$1$1.applyOrElse(ActorSystem.scala:1036)
+	at akka.actor.ActorSystemImpl$TerminationCallbacks$$anonfun$addRec$1$1.applyOrElse(ActorSystem.scala:1036)
+	at scala.concurrent.Future$$anonfun$andThen$1.apply(Future.scala:436)
+	at scala.concurrent.Future$$anonfun$andThen$1.apply(Future.scala:435)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:36)
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55)
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:91)
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91)
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:90)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:44)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Heap
+ PSYoungGen      total 156160K, used 68154K [0x00000000f5980000, 0x0000000100000000, 0x0000000100000000)
+  eden space 141312K, 47% used [0x00000000f5980000,0x00000000f9b1e998,0x00000000fe380000)
+  from space 14848K, 6% used [0x00000000ff180000,0x00000000ff2700a0,0x0000000100000000)
+  to   space 14336K, 0% used [0x00000000fe380000,0x00000000fe380000,0x00000000ff180000)
+ ParOldGen       total 341504K, used 30108K [0x00000000e0c00000, 0x00000000f5980000, 0x00000000f5980000)
+  object space 341504K, 8% used [0x00000000e0c00000,0x00000000e2967080,0x00000000f5980000)
+ Metaspace       used 36527K, capacity 37544K, committed 37720K, reserved 1081344K
+  class space    used 5027K, capacity 5220K, committed 5248K, reserved 1048576K

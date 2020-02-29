@@ -1,0 +1,88 @@
+12:20:36,829 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+12:20:36,829 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+12:20:36,829 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [jar:file:/home/nikitasokolov/flamestream/lib/flamestream-runtime-1.0-SNAPSHOT.jar!/logback.xml]
+12:20:36,829 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs multiple times on the classpath.
+12:20:36,830 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/home/nikitasokolov/flamestream/lib/flamestream-runtime-1.0-SNAPSHOT.jar!/logback.xml]
+12:20:36,830 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/home/nikitasokolov/flamestream/flamestream-runtime-1.0-SNAPSHOT.jar!/logback.xml]
+12:20:36,846 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@6108b2d7 - URL [jar:file:/home/nikitasokolov/flamestream/lib/flamestream-runtime-1.0-SNAPSHOT.jar!/logback.xml] is not of type file
+12:20:36,896 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+12:20:36,897 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+12:20:36,905 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+12:20:36,912 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+12:20:36,967 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+12:20:36,973 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [FILE]
+12:20:37,003 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@357863579 - No compression will be used
+12:20:37,004 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@357863579 - Will use the pattern /tmp/application_%d{yyyy-MM-dd}.%i.log for the active file
+12:20:37,007 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@6bf256fa - The date pattern is 'yyyy-MM-dd' from file name pattern '/tmp/application_%d{yyyy-MM-dd}.%i.log'.
+12:20:37,007 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@6bf256fa - Roll-over at midnight.
+12:20:37,011 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@6bf256fa - Setting initial period to Sun Jun 09 12:19:42 MSK 2019
+12:20:37,011 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@6bf256fa - SizeAndTimeBasedFNATP is deprecated. Use SizeAndTimeBasedRollingPolicy instead
+12:20:37,011 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@6bf256fa - For more information see http://logback.qos.ch/manual/appenders.html#SizeAndTimeBasedRollingPolicy
+12:20:37,015 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+12:20:37,017 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - Active log file name: /tmp/application.log
+12:20:37,018 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - File property is set to [/tmp/application.log]
+12:20:37,019 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to WARN
+12:20:37,019 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+12:20:37,019 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [FILE] to Logger[ROOT]
+12:20:37,019 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+12:20:37,020 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@6cd8737 - Registering current configuration as safe fallback point
+
+2019-06-09T12:20:38.032+0300: 1.425: [GC (Metadata GC Threshold) [PSYoungGen: 108152K->15861K(149504K)] 108152K->15941K(491008K), 0.0279222 secs] [Times: user=0.09 sys=0.04, real=0.03 secs] 
+2019-06-09T12:20:38.060+0300: 1.453: [Full GC (Metadata GC Threshold) [PSYoungGen: 15861K->0K(149504K)] [ParOldGen: 80K->15078K(341504K)] 15941K->15078K(491008K), [Metaspace: 20802K->20802K(1067008K)], 0.0295578 secs] [Times: user=0.18 sys=0.01, real=0.03 secs] 
+12:20:39.369 [worker-akka.actor.default-dispatcher-7-EventThread] ERROR o.a.c.f.r.c.NodeCache  - Calling listener
+com.esotericsoftware.kryo.KryoException: Buffer too small: capacity: 0, required: 1
+	at com.esotericsoftware.kryo.io.ByteBufferInput.require(ByteBufferInput.java:192)
+	at com.esotericsoftware.kryo.io.ByteBufferInput.readVarInt(ByteBufferInput.java:396)
+	at com.esotericsoftware.kryo.util.DefaultClassResolver.readClass(DefaultClassResolver.java:127)
+	at com.esotericsoftware.kryo.Kryo.readClass(Kryo.java:693)
+	at com.esotericsoftware.kryo.Kryo.readClassAndObject(Kryo.java:804)
+	at com.spbsu.flamestream.runtime.serialization.KryoSerializer.deserialize(KryoSerializer.java:31)
+	at com.spbsu.flamestream.runtime.ProcessingWatcher.lambda$preStart$0(ProcessingWatcher.java:95)
+	at org.apache.curator.framework.recipes.cache.NodeCache$4.apply(NodeCache.java:326)
+	at org.apache.curator.framework.recipes.cache.NodeCache$4.apply(NodeCache.java:320)
+	at org.apache.curator.framework.listen.ListenerContainer$1.run(ListenerContainer.java:93)
+	at org.apache.curator.shaded.com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:435)
+	at org.apache.curator.framework.listen.ListenerContainer.forEach(ListenerContainer.java:85)
+	at org.apache.curator.framework.recipes.cache.NodeCache.setNewData(NodeCache.java:318)
+	at org.apache.curator.framework.recipes.cache.NodeCache.processBackgroundResult(NodeCache.java:285)
+	at org.apache.curator.framework.recipes.cache.NodeCache.access$300(NodeCache.java:57)
+	at org.apache.curator.framework.recipes.cache.NodeCache$3.processResult(NodeCache.java:123)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.sendToBackgroundCallback(CuratorFrameworkImpl.java:865)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.processBackgroundOperation(CuratorFrameworkImpl.java:635)
+	at org.apache.curator.framework.imps.WatcherRemovalFacade.processBackgroundOperation(WatcherRemovalFacade.java:152)
+	at org.apache.curator.framework.imps.GetDataBuilderImpl$3.processResult(GetDataBuilderImpl.java:272)
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:569)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:505)
+2019-06-09T12:20:49.651+0300: 13.044: [GC (Metadata GC Threshold) [PSYoungGen: 122896K->15732K(149504K)] 137974K->50350K(491008K), 0.0242050 secs] [Times: user=0.18 sys=0.02, real=0.02 secs] 
+2019-06-09T12:20:49.675+0300: 13.068: [Full GC (Metadata GC Threshold) [PSYoungGen: 15732K->0K(149504K)] [ParOldGen: 34617K->38767K(341504K)] 50350K->38767K(491008K), [Metaspace: 34546K->34546K(1079296K)], 0.0438393 secs] [Times: user=0.27 sys=0.01, real=0.05 secs] 
+2019-06-09T12:20:56.245+0300: 19.637: [GC (Allocation Failure) [PSYoungGen: 128512K->512K(149504K)] 167279K->39287K(491008K), 0.0042150 secs] [Times: user=0.01 sys=0.01, real=0.00 secs] 
+2019-06-09T12:21:03.659+0300: 27.051: [GC (Allocation Failure) [PSYoungGen: 129024K->512K(149504K)] 167799K->39295K(491008K), 0.0047222 secs] [Times: user=0.03 sys=0.00, real=0.00 secs] 
+2019-06-09T12:21:11.078+0300: 34.471: [GC (Allocation Failure) [PSYoungGen: 129024K->320K(129024K)] 167807K->39111K(470528K), 0.0030890 secs] [Times: user=0.01 sys=0.00, real=0.00 secs] 
+2019-06-09T12:21:18.573+0300: 41.965: [GC (Allocation Failure) [PSYoungGen: 128832K->384K(150016K)] 167623K->39183K(491520K), 0.0053038 secs] [Times: user=0.02 sys=0.02, real=0.01 secs] 
+2019-06-09T12:21:26.149+0300: 49.541: [GC (Allocation Failure) [PSYoungGen: 128896K->448K(148992K)] 167695K->39255K(490496K), 0.0025864 secs] [Times: user=0.01 sys=0.01, real=0.01 secs] 
+2019-06-09T12:21:33.687+0300: 57.080: [GC (Allocation Failure) [PSYoungGen: 128960K->352K(151552K)] 167767K->39167K(493056K), 0.0054732 secs] [Times: user=0.03 sys=0.00, real=0.01 secs] 
+2019-06-09T12:21:42.017+0300: 65.409: [GC (Allocation Failure) [PSYoungGen: 132448K->663K(151040K)] 171263K->39486K(492544K), 0.0032240 secs] [Times: user=0.02 sys=0.00, real=0.01 secs] 
+2019-06-09T12:21:51.951+0300: 75.344: [GC (Allocation Failure) [PSYoungGen: 132759K->544K(153600K)] 171582K->39375K(495104K), 0.0044224 secs] [Times: user=0.03 sys=0.00, real=0.00 secs] 
+12:22:10.459 [Curator-PathChildrenCache-0] ERROR o.a.c.f.r.c.PathChildrenCache  - 
+java.lang.IllegalStateException: instance must be started before calling this method
+	at org.apache.curator.shaded.com.google.common.base.Preconditions.checkState(Preconditions.java:444)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getChildren(CuratorFrameworkImpl.java:456)
+	at org.apache.curator.framework.recipes.cache.PathChildrenCache.refresh(PathChildrenCache.java:521)
+	at org.apache.curator.framework.recipes.cache.RefreshOperation.invoke(RefreshOperation.java:35)
+	at org.apache.curator.framework.recipes.cache.PathChildrenCache$9.run(PathChildrenCache.java:786)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Heap
+ PSYoungGen      total 153600K, used 93175K [0x00000000f5980000, 0x0000000100000000, 0x0000000100000000)
+  eden space 135680K, 68% used [0x00000000f5980000,0x00000000fb3f5ce8,0x00000000fde00000)
+  from space 17920K, 3% used [0x00000000fee80000,0x00000000fef08020,0x0000000100000000)
+  to   space 16896K, 0% used [0x00000000fde00000,0x00000000fde00000,0x00000000fee80000)
+ ParOldGen       total 341504K, used 38831K [0x00000000e0c00000, 0x00000000f5980000, 0x00000000f5980000)
+  object space 341504K, 11% used [0x00000000e0c00000,0x00000000e31ebda8,0x00000000f5980000)
+ Metaspace       used 36080K, capacity 36958K, committed 37208K, reserved 1081344K
+  class space    used 4968K, capacity 5161K, committed 5248K, reserved 1048576K
